@@ -29,7 +29,7 @@
 
     <section class="hero container">
       <h1 style="font-weight:400; color:white"><small style="font-size:.5em; text-transform:uppercase; letter-spacing: .1em;">Navigating</small><br>Digital Resilience </h1>
-      <p style="color:white">SUSE surveyed I.T. Leaders worldwide to understand the challenges, priorities, and investments shaping the modern infrastructure landscape. Scroll down to explore the data.</p>
+      <p style="color:white;font-weight: 300;color: rgba(255,255,255,0.6);">SUSE surveyed I.T. Leaders worldwide to understand the challenges, priorities, and investments shaping the modern infrastructure landscape. Scroll down to explore the data.</p>
       <div class="scroll-indicator">↓ Read the Insights ↓</div>
     </section>
 
@@ -150,11 +150,11 @@
         const pointsMaterial = new THREE.PointsMaterial({
             color: 0x008878,
             size: 0.1,
-            transparent: false,
+            transparent: true,
             opacity: 1,
 
             map: createCircleTexture(),
-            alphaTest: 0.2,
+            alphaTest: 1,
         });
 
         const points = new THREE.Points(pointsGeometry, pointsMaterial);
