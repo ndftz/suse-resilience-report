@@ -35,8 +35,9 @@
 
     .header-description{ padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-    border-radius: 1.6em;}
+    background-color: var(--text-muted);
+    color: var(--bg-grad-3);
+    border-radius: 1.6em; font-size: 1.3rem;}
 
     /* Container for content that must stay on top of the background */
     .content-layer {
