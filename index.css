@@ -257,9 +257,9 @@
 
     .quote-layout blockquote p{font-size: 3rem; color: white; line-height: 1.3em;  font-weight: 400; font-style:italic;}
 
-       .quote-layout blockquote{position:relative}
+       .quote-layout blockquote{position:relative; padding-left:5em;}
 
-          .quote-layout blockquote:before{
+          .quote-layout blockquote:before{ font-style:normal;
             
             
                 content: "❝";
@@ -270,4 +270,3 @@
     position: absolute;
     left: 0;
     top: -.30em;}
-     
