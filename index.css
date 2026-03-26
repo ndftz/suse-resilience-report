@@ -176,7 +176,7 @@
 
       .chart-layout,
       .chart-layout.reverse {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
       }
 
       .chart-layout.reverse .text-content {
@@ -255,10 +255,12 @@
 .quote-layout{   display: grid;
       grid-template-columns: 1fr;}
 
-    .quote-layout blockquote p{font-size: 3rem; color: white; line-height: 1.3em;  font-weight: 400; font-style:italic;}
+    .quote-layout blockquote p{font-size: 2.5rem; color: white; line-height: 1.3em;  font-weight: 300; font-style:italic;}
 
        .quote-layout blockquote{position:relative; padding-left:5em;}
 
+          .quote-layout cite{font-style: normal; text-align:center;}
+              .quote-layout cite:before{content:"— " ; color: var(--primary-color)}
           .quote-layout blockquote:before{ font-style:normal;
             
             
