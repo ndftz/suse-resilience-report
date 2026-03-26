@@ -152,6 +152,11 @@
       /* Add a subtle blur to the content above background */
     }
 
+    .chart-container canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
     @keyframes bounce {
 
       0%,
