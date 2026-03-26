@@ -21,6 +21,8 @@
     }
 
     body {
+    
+        background-color:var(--bg-grad-1);
       font-family: "SUSE", sans-serif;
       color: var(--text-main);
       line-height: 1.6;
@@ -55,7 +57,7 @@
 
     /* Typography (unchanged from original) */
     h1 {
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: 800;
       line-height: 1.1;
       margin-bottom: 1.5rem;
@@ -64,30 +66,31 @@
 
     h2 {
       font-size: 2.5rem;
-      font-weight: 700;
+      font-weight: 500;
       margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.125rem;
       color: var(--text-muted);
-      max-width: 600px;
       margin-bottom: 2rem;
     }
 
     /* Layout (unchanged from original) */
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 6rem auto;
       padding: 0 2rem;
+    
     }
 
     section {
-      min-height: 100vh;
+        min-height:60vh;
+/*      min-height: 100vh;   */
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 5rem 0;
+      padding: 5rem 0;  
     }
 
     .hero {
@@ -112,13 +115,21 @@
     .chart-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+     
       align-items: center;
       width: 100%;
     }
 
+    
     .chart-layout.reverse {
       grid-template-columns: 1fr 1fr;
+    }
+
+  .chart-layout.reverse.left {
+      grid-template-columns: 2fr 1fr;
+    }
+      .chart-layout.reverse.right {
+      grid-template-columns: 1fr 2fr;
     }
 
     .chart-layout.reverse .text-content {
@@ -132,12 +143,12 @@
     .chart-container {
       position: relative;
       width: 100%;
-      height: 400px;
+      min-height: 30em;
       /* Made the background slightly more transparent to see the 3D effect better */
-      border-radius: 2em;
+      /*border-radius: 2em;
       padding: 1.5rem;
       box-shadow: inset 0 0 0 .1em rgba(255, 255, 255, 0.1), 0 .2em 1em rgba(0, 40, 10, 0.4);
-      backdrop-filter: blur(2px);
+      */
       /* Add a subtle blur to the content above background */
     }
 
@@ -177,7 +188,7 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
 
@@ -235,7 +246,28 @@
     }
 
     @media (min-width: 900px) {
-    .curious-geeko{max-height: 30vw}
+    .curious-geeko{max-height: 20vw}
     }
 
 
+
+
+.quote-layout{   display: grid;
+      grid-template-columns: 1fr;}
+
+    .quote-layout blockquote p{font-size: 3rem; color: white; line-height: 1.3em;  font-weight: 400; font-style:italic;}
+
+       .quote-layout blockquote{position:relative}
+
+          .quote-layout blockquote:before{
+            
+            
+                content: "❝";
+    color: var(--primary-color);
+    font-size: 6em;
+    display: block;
+    font-family: "SUSE", sans-serif;
+    position: absolute;
+    left: 0;
+    top: -.30em;}
+     

@@ -6,6 +6,7 @@
 	<title>Navigating Digital Resilience 2026 - SUSE</title>
 	<link rel="stylesheet" href="">
     <script src="js/chart.min.js"></script>
+    <script src="js/chartjs-plugin-datalabels.min.js"></script>
     <script src="js/three.min.js"></script>
 
 	<script src="index-charts.js"></script>
@@ -28,8 +29,8 @@
 
 
     <section class="hero container">
-      <h1 style="font-weight:400; color:white"><small style="font-size:.5em; text-transform:uppercase; letter-spacing: .1em;">Navigating</small><br>Digital Resilience </h1>
-      <p style="color:white;font-weight: 300;color: rgba(255,255,255,0.6);">SUSE surveyed I.T. Leaders worldwide to understand the challenges, priorities, and investments shaping the modern infrastructure landscape. Scroll down to explore the data.</p>
+      <h1 style="font-weight: 100;  color:white"><small style="font-size:.3em; font-weight: 400; text-transform:uppercase; letter-spacing: .2em;">Navigating</small><br>Digital Resilience </h1>
+      <p style="color:white;font-weight: 300;color: #eafaf499;">Survey of I.T. Leaders worldwide to understand the challenges, priorities, and investments shaping the modern infrastructure landscape. </p>
       <div class="scroll-indicator">↓ Read the Insights ↓</div>
     </section>
 
@@ -52,6 +53,19 @@
         </div>
       </div>
     </section>
+
+
+<section class="container">
+      <div class="quote-layout">
+  <blockquote>
+    <p>
+   Single points of failure are more significant than ever since post inflation budgets are squeezed thin and cannot afford the redundancy we require.
+    </p>
+  </blockquote>
+  <cite>IT Leader, Japan</cite>
+
+</div>
+</section>
 
     <section class="container">
       <div class="chart-layout reverse">
@@ -77,6 +91,18 @@
         </div>
         <div class="chart-container">
           <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="chart-layout reverse left">
+        <div class="text-content">
+          <h2>Digital Sovereignty Priority</h2>
+          <p>Digital sovereignty is emerging as a critical focus for organizations, with implementation progress varying by priority level. High priority initiatives show strong completion rates, while medium and low priority efforts are more evenly distributed across stages.</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="digitalSovereigntyChart"></canvas>
         </div>
       </div>
     </section>

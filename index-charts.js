@@ -1,12 +1,16 @@
     // Global Chart Defaults for our theme (preserved from original)
     Chart.defaults.color = '#8eb3a9';
     Chart.defaults.font.family = '"SUSE", sans-serif';
+Chart.defaults.font.size = 22;
+Chart.defaults.font.weight = '500';
+Chart.defaults.font.color = '#c0efde';
+
     // Helper function to create charts (preserved from original)
     const renderChart = (chartId) => {
       const ctx = document.getElementById(chartId).getContext('2d');
       const primaryColor = '#30ba78';
-      const color2 = '#1e754b';
-      const color3 = '#4ff7a3';
+      const color3 = '#1e754b';
+      const color2 = '#a1ef8b';
       const color4 = '#279963';
       const color5 = '#5dfcbc';
       if (chartId === 'verticalBarChart') {
@@ -19,13 +23,21 @@
               data: [100, 106, 51],
               backgroundColor: [primaryColor, color2, color3, color4, color5],
               borderWidth: 0,
-              borderRadius: 10,
-              hoverOffset: 50
+              borderRadius: 3,
+              hoverOffset: 0
             }]
           },
           options: {
+            scales: {
+   x: {
+      display: false,
+   },
+   y: {
+      display: false,
+   }
+},
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             animation: {
               duration: 2000,
               easing: 'easeOutQuart'
@@ -35,17 +47,17 @@
               labels: {
                 padding: 20
               },
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-                grid: {
-                  display: false
-                }
+              legend: {
+                display: false
               },
-              x: {
-                grid: {
-                  display: false
+              datalabels: {
+                color: 'white',
+                font: {
+                  weight: 'bold',
+                  size: 16
+                },
+                formatter: (value, context) => {
+                  return context.chart.data.labels[context.dataIndex];
                 }
               }
             }
@@ -102,7 +114,7 @@
               data: [55, 35, 10],
               backgroundColor: [primaryColor, color2, color4],
               borderWidth: 0,
-              hoverOffset: 10
+              hoverOffset: 0
             }]
           },
           options: {
@@ -118,6 +130,81 @@
                 position: 'bottom',
                 labels: {
                   padding: 20
+                }
+              },
+              datalabels: {
+                color: 'white',
+                font: {
+                  weight: 'bold'
+                },
+                formatter: (value, context) => {
+                  return context.chart.data.labels[context.dataIndex];
+                }
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'digitalSovereigntyChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['High Priority', 'Medium Priority', 'Low Priority'],
+            datasets: [
+              {
+                label: 'Done',
+                data: [62, 17, 20],
+                backgroundColor: primaryColor
+              },
+              {
+                label: 'In Progress',
+                data: [35, 72, 60],
+                backgroundColor: color2
+              },
+              {
+                label: 'Not Yet',
+                data: [3, 11, 20],
+                backgroundColor: color3
+              }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart'
+            },
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: {
+                  padding: 20
+                }
+              },
+              datalabels: {
+                anchor: 'center',
+                align: 'center',
+                color: 'white',
+                font: {
+                  weight: 'bold'
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                stacked: true,
+                beginAtZero: true,
+                grid: {
+                  color: 'rgba(255,255,255,0.05)'
+                }
+              },
+              y: {
+                stacked: true,
+                grid: {
+                  display: false
                 }
               }
             }
