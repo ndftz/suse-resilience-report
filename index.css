@@ -32,6 +32,12 @@
       position: relative;
     }
 
+
+    .header-description{ padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 1.6em;}
+
     /* Container for content that must stay on top of the background */
     .content-layer {
       position: relative;
@@ -277,3 +283,6 @@
     position: absolute;
     left: 0;
     top: -.30em;}
+
+
+

@@ -149,7 +149,7 @@ Chart.defaults.font.color = '#c0efde';
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['High Priority', 'Medium Priority', 'Low Priority'],
+            labels: ['Priority ', 'Medium ', 'Low '],
             datasets: [
               {
                 label: 'Done',
