@@ -17,13 +17,15 @@ Chart.defaults.font.color = '#c0efde';
       const color2 = '#a1ef8b';
       const color4 = '#279963';
       const color5 = '#5dfcbc';
+      const color6 = '#c0efde';
+      const color7 = '#071f1b';
       if (chartId === 'verticalBarChart') {
         new Chart(ctx, {
           type: 'pie',
           data: {
             labels: ['USA', 'Europe', 'APAC', ],
             datasets: [{
-              label: '% of Developers Using',
+              label: 'regions',
               data: [100, 106, 51],
               backgroundColor: [primaryColor, color2, color3, color4, color5],
               borderWidth: 0,
@@ -56,7 +58,10 @@ Chart.defaults.font.color = '#c0efde';
                 display: false
               },
               datalabels: {
-                color: '#071f1b',
+               
+                color: [color7, color7, color6, color6, color6],
+
+
                 font: {
                   weight: 'bold',
                   size: 26
@@ -219,6 +224,7 @@ Chart.defaults.font.color = '#c0efde';
                 anchor: 'center',
                 align: 'center',
                 color: '#071f1b',
+                
                 font: {
                   weight: '600'
                 },
@@ -245,25 +251,21 @@ Chart.defaults.font.color = '#c0efde';
         });
       }
     };
-    // Set up Intersection Observer to trigger charts on scroll (preserved from original)
-    document.addEventListener('DOMContentLoaded', () => {
-      const chartCanvases = document.querySelectorAll('.chart-container canvas');
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3 // Trigger when 30% of the chart container is visible
-      };
-      const chartObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Render the chart based on the canvas ID
-            renderChart(entry.target.id);
-            // Stop observing once rendered so it doesn't re-animate every scroll
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-      chartCanvases.forEach(canvas => {
-        chartObserver.observe(canvas);
+    // Set up Intersection Observer to trigger charts on scroll
+    const chartCanvases = document.querySelectorAll('.chart-container canvas');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.3
+    };
+    const chartObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          renderChart(entry.target.id);
+          observer.unobserve(entry.target);
+        }
       });
+    }, observerOptions);
+    chartCanvases.forEach(canvas => {
+      chartObserver.observe(canvas);
     });
