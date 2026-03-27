@@ -213,6 +213,9 @@ html, body {
     /* Responsive */
     @media (max-width: 900px) {
 
+
+    .three-facts-layout,
+
       .chart-layout,
       .chart-layout.reverse {
         grid-template-columns: 1fr !important;
