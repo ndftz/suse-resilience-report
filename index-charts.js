@@ -1,4 +1,8 @@
+    // Register datalabels plugin globally
+    Chart.register(ChartDataLabels);
+
     // Global Chart Defaults for our theme (preserved from original)
+    Chart.defaults.plugins.tooltip.enabled = false;
     Chart.defaults.color = '#8eb3a9';
     Chart.defaults.font.family = '"SUSE", sans-serif';
 Chart.defaults.font.size = 22;
@@ -28,6 +32,7 @@ Chart.defaults.font.color = '#c0efde';
             }]
           },
           options: {
+            
             scales: {
    x: {
       display: false,
@@ -51,13 +56,14 @@ Chart.defaults.font.color = '#c0efde';
                 display: false
               },
               datalabels: {
-                color: 'white',
+                color: '#071f1b',
                 font: {
                   weight: 'bold',
-                  size: 16
+                  size: 26
                 },
                 formatter: (value, context) => {
-                  return context.chart.data.labels[context.dataIndex];
+                  const label = context.chart.data.labels[context.dataIndex];
+                  return label + '\n' + value;
                 }
               }
             }
@@ -87,10 +93,21 @@ Chart.defaults.font.color = '#c0efde';
             plugins: {
               legend: {
                 display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'start',
+                color: '#071f1b',
+                font: {
+                  weight: '600',
+                  size: 30
+                },
+                formatter: (value) => value
               }
             },
             scales: {
               x: {
+                display: false,
                 beginAtZero: true,
                 grid: {
                   color: 'rgba(255,255,255,0.05)'
@@ -107,9 +124,9 @@ Chart.defaults.font.color = '#c0efde';
       }
       if (chartId === 'pieChart') {
         new Chart(ctx, {
-          type: 'pie',
+          type: 'doughnut',
           data: {
-            labels: ['Fully Remote', 'Hybrid', 'Full In-Office'],
+            labels: ['yeah', 'maybe', 'nah'],
             datasets: [{
               data: [55, 35, 10],
               backgroundColor: [primaryColor, color2, color4],
@@ -127,18 +144,22 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
               legend: {
-                position: 'bottom',
+
+                
+                position: 'none',
                 labels: {
                   padding: 20
                 }
               },
               datalabels: {
-                color: 'white',
+                color: '#071f1b',
                 font: {
-                  weight: 'bold'
+                  align: 'center',
+                  weight: '600'
                 },
                 formatter: (value, context) => {
-                  return context.chart.data.labels[context.dataIndex];
+                  const label = context.chart.data.labels[context.dataIndex];
+                  return label + '\n' + value + '%';
                 }
               }
             }
@@ -178,23 +199,35 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
               legend: {
-                position: 'bottom',
+                position: 'top',
                 labels: {
+
+                usePointStyle: true, 
+                
+                // Define a specific shape if needed (overrides dataset point style if specified)
+                pointStyle: 'circle', // or 'rect', 'triangle', 'star', 'rectRounded', etc.
+                
+                // You can also adjust the size of the marker
+                boxWidth: 30, // width in pixels
+                boxHeight:30,
+            
+
                   padding: 20
                 }
               },
               datalabels: {
                 anchor: 'center',
                 align: 'center',
-                color: 'white',
+                color: '#071f1b',
                 font: {
-                  weight: 'bold'
+                  weight: '600'
                 },
                 formatter: (value) => value + '%'
               }
             },
             scales: {
               x: {
+                 display: false,
                 stacked: true,
                 beginAtZero: true,
                 grid: {
