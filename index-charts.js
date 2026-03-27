@@ -29,8 +29,9 @@ Chart.defaults.font.color = '#c0efde';
               data: [100, 106, 51],
               backgroundColor: [primaryColor, color2, color3, color4, color5],
               borderWidth: 0,
-              borderRadius: 3,
-              hoverOffset: 0
+              offset: 20, 
+              borderRadius: 6,
+              hoverOffset: 20
             }]
           },
           options: {
@@ -140,6 +141,7 @@ Chart.defaults.font.color = '#c0efde';
             }]
           },
           options: {
+            rotation: 15,
             responsive: true,
             maintainAspectRatio: false,
             animation: {
@@ -175,21 +177,21 @@ Chart.defaults.font.color = '#c0efde';
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Priority ', 'Medium ', 'Low '],
+            labels: ['Priority ', 'Medium ', 'Low ', 'Unsure '],
             datasets: [
               {
                 label: 'Done',
-                data: [62, 17, 20],
+                data: [62, 17, 20, 10],
                 backgroundColor: primaryColor
               },
               {
                 label: 'In Progress',
-                data: [35, 72, 60],
+                data: [35, 72, 60, 30],
                 backgroundColor: color2
               },
               {
                 label: 'Not Yet',
-                data: [3, 11, 20],
+                data: [3, 11, 20, 60],
                 backgroundColor: color3
               }
             ]
@@ -251,21 +253,29 @@ Chart.defaults.font.color = '#c0efde';
         });
       }
     };
-    // Set up Intersection Observer to trigger charts on scroll
-    const chartCanvases = document.querySelectorAll('.chart-container canvas');
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px 0px -10% 0px',
-      threshold: 0.3
-    };
-    const chartObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          renderChart(entry.target.id);
-          observer.unobserve(entry.target);
-        }
+    // Create all charts immediately in their final state (no animation),
+    // then replay the animation when each one scrolls into view.
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.chart-container canvas').forEach(canvas => {
+        renderChart(canvas.id);
+        const chart = Chart.getChart(canvas);
+        if (chart) chart.update('none');
       });
-    }, observerOptions);
-    chartCanvases.forEach(canvas => {
-      chartObserver.observe(canvas);
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const chart = Chart.getChart(entry.target);
+            if (chart) {
+              chart.reset();
+              chart.update();
+            }
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.chart-container canvas').forEach(canvas => {
+        observer.observe(canvas);
+      });
     });
