@@ -299,3 +299,9 @@ html, body {
 
 
 
+
+
+
+    footer {color:var(--text-muted); background-color:#071f1b99}
+
+    footer .container{margin-bottom:0}
