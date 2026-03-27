@@ -329,4 +329,4 @@ html, body {
 
 
 
-        .count-up{font-size:10em; font-weight:900; line-height:.8em; color: var(--primary-color)}
+        .count-up{font-size:10em; font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);}
