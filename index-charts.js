@@ -199,7 +199,7 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
               legend: {
-                position: 'top',
+                position: 'bottom',
                 labels: {
 
                 usePointStyle: true, 

@@ -141,6 +141,10 @@ html, body {
   .chart-layout.reverse.left {
       grid-template-columns: 2fr 1fr;
     }
+
+    .chart-layout.full-width {
+      grid-template-columns: 1fr;}
+
       .chart-layout.reverse.right {
       grid-template-columns: 1fr 2fr;
     }
