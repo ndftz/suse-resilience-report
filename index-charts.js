@@ -1,3 +1,28 @@
+    // Count-up animation on scroll
+    const countUpObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseFloat(el.textContent);
+        const isDecimal = el.textContent.includes('.');
+        const duration = 2200;
+        const start = performance.now();
+        const tick = (now) => {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = eased * target;
+          el.textContent = isDecimal ? value.toFixed(1) : Math.floor(value).toString();
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = isDecimal ? target.toFixed(1) : target.toString();
+        };
+        requestAnimationFrame(tick);
+        countUpObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.count-up').forEach(el => countUpObserver.observe(el));
+
     // Register datalabels plugin globally
     Chart.register(ChartDataLabels);
 
@@ -31,7 +56,7 @@ Chart.defaults.font.color = '#c0efde';
               borderWidth: 0,
               offset: 20, 
               borderRadius: 6,
-              hoverOffset: 20
+              hoverOffset: 30
             }]
           },
           options: {
@@ -51,7 +76,7 @@ Chart.defaults.font.color = '#c0efde';
               easing: 'easeOutQuart'
             },
             plugins: {
-              position: 'bottom',
+             
               labels: {
                 padding: 20
               },
@@ -62,9 +87,14 @@ Chart.defaults.font.color = '#c0efde';
                
                 color: [color7, color7, color6, color6, color6],
 
-
+                anchor: 'end',
+                
+                clamp: true,
+                align: 'start',
+                offset: 30,
                 font: {
                   weight: 'bold',
+                  
                   size: 26
                 },
                 formatter: (value, context) => {
@@ -85,26 +115,30 @@ Chart.defaults.font.color = '#c0efde';
               label: 'Impact Score (Out of 100)',
               data: [85, 72, 64, 45],
               backgroundColor: primaryColor,
+              backgroundColor: [primaryColor, color2, color4],
               borderRadius: 6
             }]
           },
           options: {
+            
+
             indexAxis: 'y', // This makes the bar chart horizontal
             responsive: true,
             maintainAspectRatio: false,
+         
             animation: {
               duration: 2000,
               easing: 'easeOutQuart'
             },
             plugins: {
-              legend: {
-                display: false
-              },
+              
               datalabels: {
                 anchor: 'end',
                 align: 'start',
                 color: '#071f1b',
+                offset: 10,
                 font: {
+                   
                   weight: '600',
                   size: 30
                 },
@@ -114,10 +148,7 @@ Chart.defaults.font.color = '#c0efde';
             scales: {
               x: {
                 display: false,
-                beginAtZero: true,
-                grid: {
-                  color: 'rgba(255,255,255,0.05)'
-                }
+                
               },
               y: {
                 grid: {
@@ -168,6 +199,7 @@ Chart.defaults.font.color = '#c0efde';
                   const label = context.chart.data.labels[context.dataIndex];
                   return label + '\n' + value + '%';
                 }
+                
               }
             }
           }
@@ -202,8 +234,15 @@ Chart.defaults.font.color = '#c0efde';
             maintainAspectRatio: false,
             animation: {
               duration: 2000,
-              easing: 'easeOutQuart'
+              easing: 'easeOutQuart',
+            
+     
+        
+     
+      
+            
             },
+            
             plugins: {
               legend: {
                 position: 'bottom',
@@ -223,14 +262,27 @@ Chart.defaults.font.color = '#c0efde';
                 }
               },
               datalabels: {
-                anchor: 'center',
-                align: 'center',
-                color: '#071f1b',
+                labels: {
+                  value: {
+                    anchor: 'center',
+                    align: 'start',
+                    clamp: true,
+                    color: '#071f1b',
+                    offset: -5,
+                    font: { weight: '600', size: 22 },
+                    formatter: (value) => value
+                  },
+                  unit: {
+                    anchor: 'center',
+                    align: 'start',
+                    clamp: true,
+                    color: '#071f1b', 
+                    font: { weight: '500', size: 14 },
+                    formatter: () => '%',
+                    offset: -17
                 
-                font: {
-                  weight: '600'
-                },
-                formatter: (value) => value + '%'
+                  }
+                }
               }
             },
             scales: {
