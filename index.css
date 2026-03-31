@@ -294,7 +294,7 @@ html, body {
 
 .dangling-geeko{
     display:block;  
-    max-height:50vh; min-height: 40rem; display:block;
+    max-height:70vh; min-height: 45rem; display:block;
     width:100%;
         z-index: 999;
     position: relative;
