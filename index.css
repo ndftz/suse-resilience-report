@@ -189,6 +189,7 @@ html, body {
     .chart-container canvas {
       max-width: 100%;
       height: auto;
+      min-height:15em;
     }
 
     @keyframes bounce {
@@ -287,7 +288,7 @@ html, body {
     width:100%;
         z-index: 999;
     position: relative;
-    margin: -18em 0;
+    
 }
 
 
@@ -297,6 +298,7 @@ html, body {
     width:100%;
         z-index: 999;
     position: relative;
+    margin: -25em 0;
 }
 
 
