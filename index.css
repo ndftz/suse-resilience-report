@@ -251,12 +251,17 @@ html, body {
   50%{  transform: rotate(1deg)}
 }
 
-#gc-leaves-1{transform-origin:top right;}
-#gc-leaves-2{transform-origin:50% 100%;}
-#gc-leaves-1,
-#gc-leaves-2{ animation: sway 6s infinite;}
+.dg-frontleg{transform-origin:10% 10%;}
+.dg-backleg{transform-origin:20% 100%;}
+.dg-backleg, .dg-backleg :last-child,  .dg-backleg :nth-child(2),
+.dg-frontleg, .dg-frontleg :last-child { animation: sway 6s infinite;}
+.dg-backleg{animation-delay:-6s}
+.dg-backleg :nth-child(2),
+.dg-frontleg{animation-delay:-6s; }
+.dg-backleg{ animation-delay:-3s}
 @keyframes sway{50%{transform:rotate(10deg)}}
 
+.dg-body{ transform-origin:top right;  animation: branch-sway 5s infinite}
 
 
 #gc-eyelids{animation: blink 2s infinite}
@@ -265,6 +270,7 @@ html, body {
   50%{stroke-width: 120}
   75%,100%{stroke-width: 0}
 }
+
 
 #gc-pupil{animation: look 4s infinite}
 
@@ -281,9 +287,22 @@ html, body {
     width:100%;
         z-index: 999;
     position: relative;
+    margin: -18em 0;
 }
 
 
+.dangling-geeko{
+    display:block;  
+    max-height:50vh; min-height: 40rem; display:block;
+    width:100%;
+        z-index: 999;
+    position: relative;
+}
+
+
+#gc-pupil{animation: look 4s infinite}
+
+.dg-pupil{animation: look 4s infinite; transform-origin:50% 50%;}
 
     @media (min-width: 700px) {
     .curious-geeko{max-height: 60vw}
