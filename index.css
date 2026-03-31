@@ -214,7 +214,7 @@ html, body {
     /* Responsive */
     @media (max-width: 900px) {
 
-
+     .three-links ,
     .three-facts-layout,
 
       .chart-layout,
@@ -344,7 +344,7 @@ html, body {
 
 
 
-    footer {color:var(--text-muted); background-color:#071f1b99}
+    footer {color:var(--text-muted); background-color:#071f1b99; padding-bottom:2em;}
 
     footer .container{margin-bottom:0}
     footer h3{margin: 2em 0}
@@ -352,3 +352,9 @@ html, body {
 
 
         .count-up{font-size:10em; font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);}
+
+        .three-links {display:grid; grid-template-columns: repeat(3, 1fr); text-align:center; padding:2em; gap: 1em; margin:0 auto}
+
+         .three-links a {text-decoration:none; color: white; background-color: var(--chart-color-2); padding: 1em 2em; border-radius: 3em}
+
+          .three-links a:first-child{background-color:white; color:#0c322c}
