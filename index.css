@@ -425,7 +425,7 @@ text-shadow: .0em .05em .03em #0c322c55;
 .count-up:before{content:attr(data-count); position:absolute; z-index:-1;    text-shadow: .01em .09em .075em var(--bg-grad-3);}
 
 
-.count-up.large{ font-size:clamp(10rem, -5rem + 35vw, 35rem);}
+.count-up.large{ font-size:clamp(20rem, -5rem + 35vw, 35rem);}
 
 .three-links {display:grid; grid-template-columns: repeat(3, 1fr); text-align:center; padding:2em; gap: 1em; margin:0 auto}
 
