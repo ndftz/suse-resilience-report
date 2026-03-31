@@ -12,9 +12,15 @@
           const progress = Math.min(elapsed / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           const value = eased * target;
-          el.textContent = isDecimal ? value.toFixed(1) : Math.floor(value).toString();
+          const current = isDecimal ? value.toFixed(1) : Math.floor(value).toString();
+          el.textContent = current;
+          el.dataset.count = current;
           if (progress < 1) requestAnimationFrame(tick);
-          else el.textContent = isDecimal ? target.toFixed(1) : target.toString();
+          else {
+            const final = isDecimal ? target.toFixed(1) : target.toString();
+            el.textContent = final;
+            el.dataset.count = final;
+          }
         };
         requestAnimationFrame(tick);
         countUpObserver.unobserve(el);
