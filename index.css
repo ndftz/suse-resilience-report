@@ -39,12 +39,12 @@ html, body {
 
 
     .header-description{ 
-            padding: 2em 0;
+            padding: 2em 0; padding-top: 1em;
     font-weight: 200;
     color: var(--text-main);
     font-size: 1.3rem;
     border-top: .1em solid var(--text-muted);
-    margin-top: 1em !important;
+    margin-top: 1.5em !important;
 }
 
     /* Container for content that must stay on top of the background */
@@ -259,6 +259,11 @@ html, body {
   animation: branch-sway 5s infinite
 }
 
+
+#gl-head{animation: sway 5s infinite; transform-origin:bottom left;}
+
+#gl-eyelids{animation: blink 3s infinite}
+
 @keyframes branch-sway{
   0%,100%{transform: rotate(-1deg)}
   50%{  transform: rotate(1deg)}
@@ -308,8 +313,17 @@ html, body {
     display:block;  
     max-height:30vh; min-height: 20rem; display:block;
     width:100%;
-        z-index: 999;
+        z-index: 1;
     position: relative;
+    
+}
+
+.laying-geeko{
+    display:block;  
+    max-height:30vh; min-height: 20rem; display:block;
+    width:100%;
+    max-width: 900px;
+    position: relative;        z-index: 2;
     
 }
 
