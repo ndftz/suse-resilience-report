@@ -54,7 +54,7 @@ Chart.defaults.font.color = '#c0efde';
               data: [100, 106, 51],
               backgroundColor: [primaryColor, color2, color3, color4, color5],
               borderWidth: 0,
-              offset: 20, 
+              offset: 30, 
               borderRadius: 6,
               hoverOffset: 30
             }]
@@ -78,9 +78,12 @@ Chart.defaults.font.color = '#c0efde';
             plugins: {
              
               labels: {
-                padding: 20
+                padding: 20,
+                
               },
               legend: {
+
+
                 display: false
               },
               datalabels: {
@@ -116,6 +119,7 @@ Chart.defaults.font.color = '#c0efde';
               data: [85, 72, 64, 45],
               backgroundColor: primaryColor,
               backgroundColor: [primaryColor, color2, color4],
+               
               borderRadius: 6
             }]
           },
@@ -167,7 +171,9 @@ Chart.defaults.font.color = '#c0efde';
             datasets: [{
               data: [55, 35, 10],
               backgroundColor: [primaryColor, color2, color4],
+              
               borderWidth: 0,
+                  borderRadius: 6,
               hoverOffset: 0
             }]
           },
@@ -182,11 +188,14 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
               legend: {
-
                 
+                
+
+                                usePointStyle: true, 
+                pointStyle: 'circle',
                 position: 'none',
                 labels: {
-                  padding: 20
+                  padding: 20,
                 }
               },
               datalabels: {

@@ -6,7 +6,7 @@
       /* Original background */
       --primary-color: #30ba78;
       --text-main: #ffffff;
-      --text-muted: #8eb3a9;
+      --text-muted: #9ec3b9;
       --chart-color-2: #1e754b;
       --chart-color-3: #4ff7a3;
       --chart-color-4: #279963;
@@ -29,6 +29,7 @@ html, body {
       color: var(--text-main);
       line-height: 1.6;
       overflow-x: hidden;
+ 
       /* Fallback and base gradient */
       background: linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 50%, var(--bg-grad-3) 100%);
       position: relative;
@@ -99,6 +100,7 @@ html, body {
     }
 
     section {
+        font-size: 1rem;
         min-height:60vh;
 /*      min-height: 100vh;   */
       display: flex;
