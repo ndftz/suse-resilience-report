@@ -411,7 +411,7 @@ font-size: 4em;
 
 
 
-.count-up{font-size:10em;     text-align:center; position:relative; font-size:clamp(8rem, -2.5rem + 20vw, 20rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);
+.count-up{font-size:10em;     text-align:center; position:relative; font-size:clamp(15rem, -2.5rem + 18vw, 20rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);
 
 text-shadow: .0em .05em .03em #0c322c55;
 
