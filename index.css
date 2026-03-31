@@ -397,7 +397,7 @@ html, body {
          .three-links a {text-decoration:none; color: white; background-color: var(--chart-color-2); padding: 1em 2em; border-radius: 3em}
 
           .three-links a:first-child{background-color:white; color:#0c322c}
-
+            .three-links h3{ grid-column: span 3}
 
           .creative-commons{color:#9ec3b9; }
           .creative-commons:hover{color:white}
