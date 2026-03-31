@@ -335,6 +335,15 @@ font-size: 4em;
 }
 
 
+.sitting-geeko{
+    display:block;  
+    max-height:30vh; min-height: 18rem; display:block;
+    width:100%;
+    max-width: 30em; margin:0 auto;
+    position: relative;        z-index: 3;
+    
+}
+
 .dangling-geeko{
     display:block;  
     max-height:70vh; min-height: 55rem; display:block;
@@ -344,6 +353,13 @@ font-size: 4em;
  
         margin: -15em 0;
 }
+
+#gp-tail{ animation: sway 6s infinite;}
+#gp-pupil{animation: look 4s infinite}
+#gp-head{ animation: sway 6s infinite ;  transform-origin:bottom left;}
+@keyframes sway{50%{transform:rotate(10deg)}}
+#gp-eyelids{animation: blink 2s infinite}
+
 
 #gl-pupil{animation: look 4s infinite}
 
