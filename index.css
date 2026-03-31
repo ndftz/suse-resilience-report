@@ -43,7 +43,7 @@ html, body {
     font-weight: 200;
     color: var(--text-main);
     font-size: 1.3rem;
-    border-top: .1em solid var(--text-muted);
+    border-top: .055em solid white;
     margin-top: 1.5em !important;
 }
 
@@ -337,9 +337,9 @@ font-size: 4em;
 
 .sitting-geeko{
     display:block;  
-    max-height:30vh; min-height: 18rem; display:block;
+    max-height:30vh; min-height: 16rem; display:block;
     width:100%;
-    max-width: 30em; margin:0 auto;
+    max-width: 27em; margin:0 ;    margin-left: -6em;
     position: relative;        z-index: 3;
     
 }
