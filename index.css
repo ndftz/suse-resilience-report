@@ -335,7 +335,7 @@ html, body {
         z-index: 1;
     position: relative;
  
-        margin: -20em 0;
+        margin: -15em 0;
 }
 
 #gl-pupil{animation: look 4s infinite}
@@ -397,3 +397,8 @@ html, body {
          .three-links a {text-decoration:none; color: white; background-color: var(--chart-color-2); padding: 1em 2em; border-radius: 3em}
 
           .three-links a:first-child{background-color:white; color:#0c322c}
+
+
+          .creative-commons{color:#9ec3b9; }
+          .creative-commons:hover{color:white}
+          .creative-commmons svg{display:block;margin-bottom:3em}
