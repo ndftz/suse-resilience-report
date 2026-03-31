@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
  handleHeaderUltilites()
-}
+});
 function handleHeaderUltilites() {
 	const header = document.querySelector('.header');
 	let lastScrollTop = 0;
