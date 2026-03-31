@@ -322,7 +322,7 @@ html, body {
     display:block;  
     max-height:30vh; min-height: 20rem; display:block;
     width:100%;
-    max-width: 900px;
+    max-width: 700px; margin:0 auto;
     position: relative;        z-index: 2;
     
 }
@@ -387,7 +387,9 @@ html, body {
 
 
 
-        .count-up{font-size:10em;       font-size:clamp(8rem, -1.5rem + 12vw, 12.2rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);}
+        .count-up{font-size:10em;       font-size:clamp(8rem, -2.5rem + 20vw, 20rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);}
+
+.count-up.large{ font-size:clamp(10rem, -5rem + 35vw, 35rem);}
 
         .three-links {display:grid; grid-template-columns: repeat(3, 1fr); text-align:center; padding:2em; gap: 1em; margin:0 auto}
 
