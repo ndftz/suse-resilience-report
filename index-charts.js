@@ -28,7 +28,7 @@
 
     // Global Chart Defaults for our theme (preserved from original)
     Chart.defaults.plugins.tooltip.enabled = false;
-    Chart.defaults.color = '#8eb3a9';
+    Chart.defaults.color = '#fff';
     Chart.defaults.font.family = '"SUSE", sans-serif';
 Chart.defaults.font.size = 22;
 Chart.defaults.font.weight = '500';
