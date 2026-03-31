@@ -39,7 +39,7 @@ html, body {
 
 
     .header-description{ 
-            padding: 2em;
+            padding: 2em 0;
     font-weight: 200;
     color: var(--text-main);
     font-size: 1.3rem;
@@ -262,6 +262,15 @@ html, body {
   50%{  transform: rotate(1deg)}
 }
 
+
+#gc-leaves-1{transform-origin:top right;}
+#gc-leaves-2{transform-origin:50% 100%;}
+#gc-leaves-1,
+#gc-leaves-2{ animation: sway 6s infinite;}
+@keyframes sway{50%{transform:rotate(10deg)}}
+
+
+
 .dg-frontleg{transform-origin:10% 10%;}
 .dg-backleg{transform-origin:20% 100%;}
 .dg-backleg, .dg-backleg :last-child,  .dg-backleg :nth-child(2),
@@ -270,6 +279,7 @@ html, body {
 .dg-backleg :nth-child(2),
 .dg-frontleg{animation-delay:-6s; }
 .dg-backleg{ animation-delay:-3s}
+
 @keyframes sway{50%{transform:rotate(10deg)}}
 
 .dg-body{ transform-origin:top right;  animation: branch-sway 5s infinite}
