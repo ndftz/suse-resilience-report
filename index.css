@@ -338,6 +338,7 @@ html, body {
         margin: -20em 0;
 }
 
+#gl-pupil{animation: look 4s infinite}
 
 #gc-pupil{animation: look 4s infinite}
 
