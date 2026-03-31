@@ -397,12 +397,13 @@ font-size: 4em;
 
 .count-up{font-size:10em;     text-align:center; position:relative; font-size:clamp(8rem, -2.5rem + 20vw, 20rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);
 
-text-shadow: .0em .05em .03em #0c322c44;
+text-shadow: .0em .05em .03em #0c322c55;
+
 
      
-  background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-2));
+  background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-4) , var(--primary-color));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #4ff7a333;
 }
  
 .count-up:before{content:attr(data-count); position:absolute; z-index:-1;    text-shadow: .01em .09em .075em var(--bg-grad-3);}
