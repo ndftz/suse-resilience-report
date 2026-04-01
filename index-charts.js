@@ -88,8 +88,6 @@ Chart.defaults.font.color = '#c0efde';
                 
               },
               legend: {
-
-
                 display: false
               },
               datalabels: {
@@ -169,6 +167,56 @@ Chart.defaults.font.color = '#c0efde';
           }
         });
       }
+      if (chartId === 'openSourceChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Flexibility', 'Innovation', 'Trust', 'Cost Efficiency', 'Resilience', 'Freedom', 'Control', 'Strategic Independence', 'Reducing Lock-in', 'Long-term Survival', 'Complexity', 'Democratic Ideals'],
+            datasets: [{
+              label: 'Percentage',
+              data: [60, 54, 48, 43, 43, 41, 39, 38, 25, 22, 20, 18],
+              backgroundColor: [
+                primaryColor, primaryColor, primaryColor, primaryColor, 
+                color2, // Resilience highlighted
+                primaryColor, primaryColor, primaryColor, primaryColor, primaryColor, primaryColor
+              ],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y', // This makes the bar chart horizontal
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart'
+            },
+            plugins: {
+              datalabels: {
+                anchor: 'end',
+                align: 'start',
+                color: '#071f1b',
+                offset: 10,
+                font: {
+                  weight: '600',
+                  size: 20
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                display: false,
+              },
+              y: {
+                grid: {
+                  display: false
+                }
+              }
+            }
+          }
+        });
+      }
       if (chartId === 'pieChart') {
         new Chart(ctx, {
           type: 'doughnut',
@@ -194,10 +242,7 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
               legend: {
-                
-                
-
-                                usePointStyle: true, 
+                usePointStyle: true, 
                 pointStyle: 'circle',
                 position: 'none',
                 labels: {

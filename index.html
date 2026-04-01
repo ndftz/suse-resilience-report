@@ -154,9 +154,17 @@
       </div>
     </section>
 
-
-
-
+    <section class="container">
+      <div class="chart-layout reverse">
+        <div class="text-content">
+          <h2>open source</h2>
+          <p><i> In general, what does open source represent to you today? (Select all that apply)</i></p>
+        </div>
+        <div class="chart-container">
+          <canvas id="openSourceChart" style="min-height:30em"></canvas>
+        </div>
+      </div>
+    </section>
 
     <section class="container">
       <div class="chart-layout">
@@ -235,6 +243,8 @@
     </section>
 
 
+
+
        <section class="container" style="margin-top:0;  min-height:0">  
         <div class="chart-layout reverse right">
         <div class="image-content">
@@ -285,7 +295,7 @@ IT leaders to optimize cost and manage heterogeneous environments.</div>
 
         camera.position.z = 175.5;
         camera.position.x = -2;
-        camera.position.z = -1;
+        camera.position.z = 10;
 
         // Sphere parameters
         const pointCount = 60;
@@ -400,7 +410,7 @@ IT leaders to optimize cost and manage heterogeneous environments.</div>
 
             linesGeometry.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
 
-            scene.rotation.y += -0.001;
+            scene.rotation.y += -0.002;
             scene.rotation.x += -0.0003;
 
             renderer.render(scene, camera);
