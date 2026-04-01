@@ -201,10 +201,10 @@ html, body {
       max-width: 100%;
       height: auto;
       min-height:15em;
-    filter: drop-shadow(.1em 1em 3em var(--bg-grad-1)) drop-shadow(.1em 1em .3em var(--bg-grad-1));
+
     
   
-  filter: drop-shadow(.0em .05em 1em #071f1b55) drop-shadow(0rem .25rem .12em var(--bg-grad-1));
+  filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em var(--bg-grad-3));
   }
 
     @keyframes bounce {
@@ -357,7 +357,11 @@ font-size: 4em;
 }
 
 .sitting-geeko, .laying-geeko, .curious-geeko, .dangling-geeko{    
-  filter: drop-shadow(.0em .05em 2em #0005) drop-shadow(0rem .25rem .12em var(--bg-grad-1));}
+  filter: drop-shadow(.0em .05em 2em #0005) drop-shadow(0rem .25rem .12em var(--bg-grad-1));
+
+  filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em #071f1bff);
+
+}
 
 
 #gp-tail{ animation: sway 6s infinite;}
@@ -422,14 +426,21 @@ font-size: 4em;
 text-shadow: .0em .05em .03em #0c322c55;
 
 
-     
   background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-4) , var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: #4ff7a333;
 }
  
-.count-up:before{content:attr(data-count); position:absolute; z-index:-1;    text-shadow: .01em .09em .075em var(--bg-grad-3);}
+.count-up:before{content:attr(data-count); position:absolute; z-index:-1;   
+  
+   
+     
+  text-shadow: 0em .05em 1em #071f1b, 0rem .25rem .12rem #071f1b;
 
+
+}
+
+/* drop-shadow(.0em .05em 1em #071f1b55) drop-shadow(0rem .25rem .12em var(--bg-grad-1)) */ 
 
 .count-up.large{ font-size:clamp(20rem, -5rem + 35vw, 35rem);}
 
