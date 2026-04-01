@@ -36,8 +36,8 @@
     Chart.defaults.plugins.tooltip.enabled = false;
     Chart.defaults.color = '#fff';
     Chart.defaults.font.family = '"SUSE", sans-serif';
-Chart.defaults.font.size = 22;
-Chart.defaults.font.weight = '500';
+Chart.defaults.font.size = 18;
+Chart.defaults.font.weight = '400';
 Chart.defaults.font.color = '#c0efde';
 
     // Helper function to create charts (preserved from original)
