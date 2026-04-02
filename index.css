@@ -95,8 +95,8 @@ html, body {
       margin-bottom: 2rem;
     }
 
-    q{display:block; margin: 2rem 0; padding:2rem; text-align:center;line-height: 1.3em;  padding-top: 5rem; position: relative; font-style: italic; font-size: 1.5rem; font-weight: 300; border-radius: 1.75rem; background-color: rgba(0,0,0,0.2);   quotes: none;} 
-    q > b:first-child{ font-size: .8em; text-transform: uppercase; color:var(--text-muted); position:absolute; top:0; left:0; right:0; text-align:center; display: inline-block; padding: 1em 2rem; font-style:normal; letter-spacing: .1em; font-weight:600;}
+    q{display:block; margin: 2rem 0; padding:2rem; text-align:center;line-height: 1.3em;  padding-top: 5rem; position: relative; font-style: italic; font-size: 1.5rem; font-weight: 300; border-radius: 1.75rem;       background-color: var(--text-muted);  color:#071f1b; quotes: none;} 
+    q > b:first-child{ font-size: .8em; text-transform: uppercase; color:var(--text-muted); position:absolute; top:0; left:0; right:0; text-align:center; display: inline-block; padding: 1em 2rem; padding-bottom: 1rem; font-style:normal; letter-spacing: .1em; font-weight:600;color:#01564a}
     q small{color:var(--text-muted);}
 
     /* Layout (unchanged from original) */
@@ -430,7 +430,7 @@ font-size: 4em;
 text-shadow: .0em .05em .03em #0c322c55;
   background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-4) , var(--primary-color));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #4ff7a333;
+  -webkit-text-fill-color: #4ff7a355;
 }
  
 .count-up:before{content:attr(data-count); position:absolute; z-index:-1;   }

@@ -33,12 +33,12 @@
     Chart.register(ChartDataLabels);
 
     // Global Chart Defaults for our theme (preserved from original)
-    Chart.defaults.plugins.tooltip.enabled = false;
+    Chart.defaults.plugins.tooltip.enabled = true;
     Chart.defaults.color = '#c0efde';
     Chart.defaults.font.family = '"SUSE", sans-serif';
-Chart.defaults.font.size = 18;
-Chart.defaults.font.weight = '400';
-Chart.defaults.font.color = '#c0efde';
+    Chart.defaults.font.size = 18;
+    Chart.defaults.font.weight = '400';
+    Chart.defaults.font.color = '#c0efde';
 
     // Helper function to create charts (preserved from original)
     const renderChart = (chartId) => {
@@ -83,6 +83,7 @@ Chart.defaults.font.color = '#c0efde';
             },
             plugins: {
              
+        
               labels: {
                 padding: 20,
                 
