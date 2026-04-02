@@ -428,29 +428,21 @@ font-size: 4em;
 .count-up{font-size:10em;     text-align:center; position:relative; font-size:clamp(15rem, -2.5rem + 18vw, 20rem); font-weight:900; line-height:.8em; color: var(--primary-color);     text-shadow:  .025em .081em .07em var(--bg-grad-3);
 
 text-shadow: .0em .05em .03em #0c322c55;
-
-
   background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-4) , var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: #4ff7a333;
 }
  
-.count-up:before{content:attr(data-count); position:absolute; z-index:-1;   
-.count-up.percent:after{content:"%"
-   
-     
-  text-shadow: 0em .05em 1em #071f1b, 0rem .25rem .12rem #071f1b;
+.count-up:before{content:attr(data-count); position:absolute; z-index:-1;   }
+.count-up.percent:after{content:"%";  text-shadow: 0em .05em 1em #071f1b, 0rem .25rem .12rem #071f1b; font-size: .6em; font-weight: 500; color:#279963; -webkit-text-fill-color: #4ff7a355;text-shadow:  .025em .081em .1em var(--bg-grad-3)}
 
 
-}
-
-/* drop-shadow(.0em .05em 1em #071f1b55) drop-shadow(0rem .25rem .12em var(--bg-grad-1)) */ 
 
 .count-up.large{ font-size:clamp(20rem, -5rem + 35vw, 35rem);}
 
 .three-links {display:grid; grid-template-columns: repeat(3, 1fr); text-align:center; padding:2em; gap: 1em; margin:0 auto}
-
 .three-links a {text-decoration:none; color: white; background-color: var(--chart-color-2); padding: 1em 2em; border-radius: 3em}
+
 
 .three-links a:nth-child(2){background-color:white; color:#0c322c}
 .three-links h3{ grid-column: span 3; color:white}
