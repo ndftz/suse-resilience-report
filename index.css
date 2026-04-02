@@ -208,7 +208,7 @@ html, body {
 
     
   
-  filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em var(--bg-grad-3));
+  filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em  #0c322caa);
   }
 
     @keyframes bounce {

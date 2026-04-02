@@ -34,7 +34,7 @@
 
     // Global Chart Defaults for our theme (preserved from original)
     Chart.defaults.plugins.tooltip.enabled = false;
-    Chart.defaults.color = '#fff';
+    Chart.defaults.color = '#c0efde';
     Chart.defaults.font.family = '"SUSE", sans-serif';
 Chart.defaults.font.size = 18;
 Chart.defaults.font.weight = '400';
@@ -139,6 +139,10 @@ Chart.defaults.font.color = '#c0efde';
               easing: 'easeOutQuart'
             },
             plugins: {
+              legend: {
+                display: false
+              },
+              
               
               datalabels: {
                 anchor: 'end',
@@ -384,6 +388,10 @@ Chart.defaults.font.color = '#c0efde';
               easing: 'easeOutQuart'
             },
             plugins: {
+              
+              legend: {
+                display: false
+              },
               datalabels: {
                 anchor: 'end',
                 align: 'start',
