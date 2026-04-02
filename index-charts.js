@@ -364,6 +364,52 @@ Chart.defaults.font.color = '#c0efde';
           }
         });
       }
+      if (chartId === 'cybersecurityChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Yes Major Incident', 'Yes Minor Incident', 'No', 'Not Sure'],
+            datasets: [{
+              label: 'Percentage',
+              data: [23, 28, 44, 5],
+              backgroundColor: primaryColor,
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart'
+            },
+            plugins: {
+              datalabels: {
+                anchor: 'end',
+                align: 'start',
+                color: '#071f1b',
+                offset: 10,
+                font: {
+                  weight: '600',
+                  size: 20
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                display: false,
+              },
+              y: {
+                display: false,
+                grid: {
+                  display: false
+                }
+              }
+            }
+          }
+        });
+      }
     };
     // Create all charts immediately in their final state (no animation),
     // then replay the animation when each one scrolls into view.

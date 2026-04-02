@@ -436,7 +436,7 @@ text-shadow: .0em .05em .03em #0c322c55;
 }
  
 .count-up:before{content:attr(data-count); position:absolute; z-index:-1;   
-  
+.count-up.percent:after{content:"%"
    
      
   text-shadow: 0em .05em 1em #071f1b, 0rem .25rem .12rem #071f1b;
