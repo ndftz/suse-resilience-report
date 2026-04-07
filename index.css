@@ -82,7 +82,7 @@ html, body {
       color: var(--primary-color);
     }
 
-    h2 {
+    h3 {
       font-size: 2.5rem;
       font-weight: 500;
       margin-bottom: 1rem;
@@ -272,7 +272,7 @@ font-size: 4em;
 }
 
 
-#climbing-geeko{
+.dangling-geeko .dg-branch{
   transform-origin:bottom right;
   animation: branch-sway 5s infinite
 }
@@ -327,8 +327,9 @@ font-size: 4em;
 }
 
 
+
 .curious-geeko{
-    display:block;  
+
     max-height:30vh; min-height: 20rem; display:block;
     width:100%;
         z-index: 1;
@@ -351,7 +352,7 @@ font-size: 4em;
     max-height:30vh; min-height: 16rem; display:block;
     width:100%;
     max-width: 27em; margin:0 ;    margin-left: -6em;
-    position: relative;        z-index: 3;
+      
     
 }
 
@@ -360,12 +361,13 @@ font-size: 4em;
     max-height:70vh; min-height: 55rem; display:block;
     width:100%;
         z-index: 1;
-    position: relative;
+ 
  
         margin: -15em 0;
 }
 
-.sitting-geeko, .laying-geeko, .curious-geeko, .dangling-geeko{    
+.spot-illustration{     display:block;   position: relative;     z-index: 3;
+    
   filter: drop-shadow(.0em .05em 2em #0005) drop-shadow(0rem .25rem .12em var(--bg-grad-1));
 
   filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em #071f1bff);
@@ -463,3 +465,63 @@ text-shadow: .0em .05em .03em #0c322c55;
      align-content: start;
      grid-template-columns: repeat(3, 1fr);
     }
+
+.content-layer h2{text-align:center; font-weight:100;      position:relative; font-size:clamp(4rem, -3rem + 10vw, 9rem);text-shadow: 0 0.1em .1em var(--bg-grad-3);
+padding-top: 20rem; margin-top:0;
+
+
+}    
+
+.content-layer h2:before{
+content: "";
+        display: block;
+        height: 5em;
+        margin: -2.5em 0 -1em;
+        position: absolute;
+        z-index: -1;
+        top: 1em;
+        width: 100%;
+      opacity:.35;
+        background-image: conic-gradient(from 90deg at 10% 50%, var(--chart-color-4), var(--bg-grad-1)), conic-gradient(from 270deg at 90% 50%, var(--bg-grad-1), var(--chart-color-4));
+      -webkit-mask-image: radial-gradient(white 5%, transparent 70%);
+        background-position: 1% 0%, 99% 0%;
+        background-size: 50% 100%, 50% 100%;
+        background-repeat: no-repeat;}
+
+
+
+        .content-layer h2:after{
+content: "";
+        display: block;
+        height: .1rem;
+        margin: 0 auto;
+        position: absolute;
+        z-index: -1;
+        top: -1em;top: 1em;
+        width: 50%;
+        margin-left: -25%;
+        left: 50%;
+      opacity:.5;
+        background-image: radial-gradient(ellipse at top, var(--text-muted), transparent);
+    
+        background-position: 1% 0%, 99% 0%;
+        background-size: contain;
+        background-repeat: no-repeat;}
+
+
+
+
+.jump-to{background-color:#fff; color:#071f1b; position: fixed; right:0; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
+display:grid; grid-template-rows: 1fr ;border-radius: 2em 0 0 2em ; top: 50%; transition: all .4s cubic-bezier(.8,.1,.1,1.2)}
+
+
+.jump-to:not(:hover){ transform: translateX(90%); animation: peekaboo 2s infinite;}
+.jump-to:hover{ transform: translateX(0%); }
+
+@keyframes peekaboo{
+  50%{transform: translateX(80%)}
+}
+
+
+.jump-to a{padding: .5em 2em; }
+.jump-to a:hover{background-color:#071f1b; color:white;}

@@ -114,64 +114,7 @@
           }
         });
       }
-      if (chartId === 'horizontalBarChart') {
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: ['Tech Debt', 'Meetings', 'Poor Specs', 'Build Times'],
-            datasets: [{
-              label: 'Impact Score (Out of 100)',
-              data: [85, 72, 64, 45],
-              backgroundColor: primaryColor,
-              backgroundColor: [primaryColor, color2, color4],
-               
-              borderRadius: 6
-            }]
-          },
-          options: {
-            
 
-            indexAxis: 'y', // This makes the bar chart horizontal
-            responsive: true,
-            maintainAspectRatio: false,
-         
-            animation: {
-              duration: 2000,
-              easing: 'easeOutQuart'
-            },
-            plugins: {
-              legend: {
-                display: false
-              },
-              
-              
-              datalabels: {
-                anchor: 'end',
-                align: 'start',
-                color: '#071f1b',
-                offset: 10,
-                font: {
-                   
-                  weight: '600',
-                  size: 30
-                },
-                formatter: (value) => value
-              }
-            },
-            scales: {
-              x: {
-                display: false,
-                
-              },
-              y: {
-                grid: {
-                  display: false
-                }
-              }
-            }
-          }
-        });
-      }
       if (chartId === 'openSourceChart') {
         new Chart(ctx, {
           type: 'bar',
@@ -389,28 +332,40 @@
               easing: 'easeOutQuart'
             },
             plugins: {
-              
               legend: {
                 display: false
               },
               datalabels: {
                 anchor: 'end',
-                align: 'start',
+                align: 'top',
                 color: '#071f1b',
-                offset: 10,
+                offset: -30,
                 font: {
                   weight: '600',
-                  size: 20
+                  size: 16
                 },
                 formatter: (value) => value + '%'
               }
             },
             scales: {
               x: {
-                display: false,
+                display: true,
+                ticks: {
+                 
+                  font: {
+                    size: 14
+                  }
+                },
+                grid: {
+                  display: false
+                }
               },
               y: {
-                display: false,
+                display: true,
+                beginAtZero: true,
+                ticks: {
+                  display: false
+                },
                 grid: {
                   display: false
                 }
