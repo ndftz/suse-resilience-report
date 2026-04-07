@@ -349,7 +349,7 @@
             },
             scales: {
               x: {
-                display: true,
+                display: false,
                 ticks: {
                  
                   font: {
@@ -361,7 +361,7 @@
                 }
               },
               y: {
-                display: true,
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   display: false

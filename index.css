@@ -146,13 +146,15 @@ html, body {
       width: 100%;
       height: 100%;
       z-index: 0;
-      mix-blend-mode: color-burn;
+      mix-blend-mode: difference;
       pointer-events: none;
-      opacity: .3;
-       
-      /* Background at the lowest layer */
+      opacity: .1;
       pointer-events: none;
-      /* Allow clicks to pass through to content */
+    
+
+
+
+
     }
 
     /* Typography (unchanged from original) */
@@ -199,7 +201,7 @@ html, body {
       align-items: center;
       justify-content: center;
       padding: 5rem 0;  
-      position:relative; z-index:1;
+      position:relative;  
     }
 
     .hero {
@@ -630,6 +632,7 @@ details {
   z-index:4;
   min-height: 1.9em;
   padding-top: 1.5em;
+  top: 100%;
 
 }
 summary {
