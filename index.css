@@ -228,10 +228,12 @@ html, body {
 
     .scroll-indicator {
       margin-top: 3rem;
-      font-size: 1rem;
+      padding: 2em;
+      font-size: 1rem; font-weight: 400; 
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--primary-color);
+      text-decoration:none;
       animation: bounce 2s infinite;
     }
 
@@ -619,20 +621,25 @@ content: "";
 
 
 
-.jump-to{background-color:#fff; color:#071f1b; position: fixed; left:0; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
-display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; bottom: 135px; transition: all .4s cubic-bezier(.7,.1,0,1); }
+.jump-to{z-index: 9;background-color:#fff; color:#071f1b; position: fixed; left:0; top: 100vh; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
+display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 0 0 ; transition: all .4s cubic-bezier(.7,.1,0,1);  margin-top: -4em;}
 
 
-.jump-to:not(:hover){ transform: translateX( calc(-100% + 1.25em)); animation: peekaboo 2s infinite;}
-.jump-to:hover{ transform: translateX(0%);   }
+.jump-to p{position:absolute; user-select:none; color:var(--color-pine-2); top:1.5rem ; right:0; text-align:center; width: 100%; font-weight: 700;}
+
+.jump-to:not(:hover){ transform: translatey(0); animation: peekaboo 2s infinite;}
+
+.jump-to:hover{ transform: translatey( calc(-100% + 4em));   }
+
 
 @keyframes peekaboo{
-  50%{background-color: #4ff7a3; background-color: var(--color-persimmon-6); margin-left:-.25em; box-shadow: 0 .2em 1em var(--color-persimmon-3);}
+  
+  50%{ background-color: var(--color-pine-6); box-shadow: 0 .2em 1em var(--color-persimmon-3);}
 }
 
 
-.jump-to a{padding: .5em 2em; }
-.jump-to a:hover{background-color:var(--chart-color-2); color:white;}
+.jump-to a{padding: .5em 2em; color:var(--color-pine-3);}
+.jump-to a:hover{background-color:var(--color-jungle-7); color:var(--color-pine-1);}
 
 
 .center-text{text-align: center;}
