@@ -168,16 +168,17 @@ html, body {
 
     h3 {
       font-size: 2.5rem;
-      font-weight: 500;
+  
       margin-bottom: 1rem;
       line-height:1.3em;
+ 
     }
 
     h4{font-size: 2rem; font-weight:400; margin-bottom: 1rem; color: var(--chart-color-3);}
 
     p {
       font-size: 1.5rem;
-      font-weight: 400;
+      font-weight: 300;
       margin-bottom: 2rem;
     }
 
@@ -205,9 +206,15 @@ html, body {
     }
 
     .hero {
+      animation: introduction 3s  ease forwards;
       text-align: center;
       flex-direction: column;
       font-size:clamp(1.5rem, -1.5rem + 2.5vw, 2.2rem)
+    }
+
+    @keyframes introduction{
+      0%{opacity:0; transform:translateY(-4rem)}
+      100%{opacity:1;}
     }
 
     .hero p {
@@ -354,8 +361,8 @@ font-size: 4em;
 
 }
 
-
-
+.content-layer h3{      color: var(--color-jungle-6);    font-weight: 600; font-size: 2rem}
+.content-layer p{   font-size: 1.75rem;}
     svg * { 
   transform-box: fill-box;
 }
