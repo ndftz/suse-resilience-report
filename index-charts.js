@@ -324,7 +324,7 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Yes Major Incident', 'Yes Minor Incident', 'No', 'Not Sure'],
+            labels: ['Yes Major Incident', 'Yes Minor Incident', 'No Breach', 'Not Sure'],
             datasets: [{
               label: 'Percentage',
               data: [23, 28, 44, 5],
