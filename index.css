@@ -527,6 +527,8 @@ text-shadow: .0em .05em .03em #0c322c55;
   background: -webkit-linear-gradient(-90deg, var(--chart-color-3), var(--chart-color-4) , var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: #4ff7a355;
+
+  margin: 0 auto; 
 }
  
 .count-up:before{content:attr(data-count); position:absolute; z-index:-1;   }
@@ -616,7 +618,7 @@ display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; bottom:
 .jump-to a:hover{background-color:var(--chart-color-2); color:white;}
 
 
-
+.center-text{text-align: center;}
 
 details,
 summary {
