@@ -672,8 +672,14 @@ details[open] > summary > b {
 }
 details[open] {
   padding:3em 1em 1em 1em;
+  animation:ta-dah .3s ease forwards;
+  transform-origin: 0% 0%;
   
 }
+@keyframes ta-dah {
+  0%{transform:scale(.9); opacity:0;}
+}
+
 details > summary:before {
   content: "?";
   position: absolute;
