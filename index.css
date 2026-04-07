@@ -590,10 +590,10 @@ content: "";
 
 
 .jump-to{background-color:#fff; color:#071f1b; position: fixed; left:0; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
-display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; top: 33%; transition: all .4s cubic-bezier(.7,.1,0,1); }
+display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; bottom: 135px; transition: all .4s cubic-bezier(.7,.1,0,1); }
 
 
-.jump-to:not(:hover){ transform: translateX( calc(-100% + 1.5em)); animation: peekaboo 2s infinite;}
+.jump-to:not(:hover){ transform: translateX( calc(-100% + 1.25em)); animation: peekaboo 2s infinite;}
 .jump-to:hover{ transform: translateX(0%);   }
 
 @keyframes peekaboo{
@@ -605,4 +605,3 @@ display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; top: 33
 .jump-to a:hover{background-color:#071f1b; color:white;}
 
 
-.jump-to:before{content: "\2192";}
