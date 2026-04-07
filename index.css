@@ -812,7 +812,7 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
 
 .grid-5-layout h4{text-align:center; color:var(--text-main); }
 
-.grid-5-layout .flag{ position:relative; display:block;  font-size: 2em; width: 8em;height:6em;   font-size:clamp(1rem, 2vw, 2rem); background-repeat:no-repeat; background-size: contain; background-position: 50% 50%;   filter: drop-shadow(.0em .05em 1em #0c322c55) drop-shadow(0rem .25rem .12em  #0c322caa);    overflow: hidden;
+.grid-5-layout .flag{ position:relative; display:block;  font-size: 2em; width: 8em;height:6em;   font-size:clamp(1rem, 2vw, 2rem); background-repeat:no-repeat; background-size: contain; background-position: 50% 50%;   box-shadow:.0em .05em 1em #0c322c55, 0rem .25rem .12em  #0c322caa, inset 0 1px #fff8;   overflow: hidden;
     border-radius: 1em; margin: 1em auto;
  }
 
