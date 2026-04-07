@@ -622,10 +622,11 @@ content: "";
 
 
 .jump-to{z-index: 9;background-color:#fff; color:#071f1b; position: fixed; right:0; top: 100vh; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
-display:grid; grid-template-rows: 1fr ;border-radius: 1.5em 0   0 0 ; transition: all .4s cubic-bezier(.7,.1,0,1);  margin-top: -4em;}
+display:grid; grid-template-rows: 1fr ;border-radius: 1.5em 0   0 0 ; transition: all .4s cubic-bezier(.7,.1,0,1);  margin-top: -4em;
+color:var(--color-fog-4); }
 
 
-.jump-to p{position:absolute; text-transform: uppercase;user-select:none; color:var(--color-fog-4); top:1.5rem ; right:0;  padding-left:2.9rem; width: 100%; font-weight: 700; letter-spacing:.1rem; font-family: "SUSE Mono"}
+.jump-to p{position:absolute; text-transform: uppercase;user-select:none; top:1.5rem ; right:0;  padding-left:2.9rem; width: 100%; font-weight: 700; letter-spacing:.1rem; font-family: "SUSE Mono"}
 
 .jump-to:not(:hover){ transform: translatey(0); animation: peekaboo 20s infinite;}
 
@@ -634,7 +635,7 @@ display:grid; grid-template-rows: 1fr ;border-radius: 1.5em 0   0 0 ; transition
 
 @keyframes peekaboo{
   0%,80%{background-color:#fff;box-shadow: 0 .2em 1em;}
-  90%{ background-color: var(--color-pine-6); box-shadow: 0 .2em 1em var(--color-jungle-3);}
+  90%{ background-color: var(--color-pine-6); color: var(--color-pine-1); box-shadow: 0 .2em 1em var(--color-jungle-3);}
 }
 
 

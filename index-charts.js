@@ -50,6 +50,9 @@
       const color5 = '#5dfcbc';
       const color6 = '#c0efde';
       const color7 = '#071f1b';
+      const colorDarkFog = '#33453f';
+      const colorMediumFog = '#809b8f';
+      const colorLightFog = '#eee';
       if (chartId === 'verticalBarChart') {
         new Chart(ctx, {
           type: 'pie',
@@ -318,7 +321,7 @@
               label: 'Percentage',
               data: [23, 28, 44, 5],
              
-                            backgroundColor: [color6, color6, color3, color3],
+                            backgroundColor: [color6, color6, colorDarkFog, colorDarkFog],
               
 
               borderRadius: 6
@@ -340,7 +343,7 @@
                 anchor: 'end',
                 align: 'top',
                 color: '#071f1b',
-                color: [color7, color7, color6, color6, color6],
+                color: [color7, color7, colorMediumFog, colorMediumFog, color6],
                 offset: -40,
                 font: {
                   weight: '600',
