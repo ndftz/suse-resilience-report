@@ -178,7 +178,7 @@ html, body {
 
     p {
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 350;
       margin-bottom: 2rem;
     }
 
@@ -248,7 +248,17 @@ html, body {
 
 .big-num-label{font-size: 1.5em}
 
+
+.spot-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+           order: 1;
+}
+
     /* Chart Sections (unchanged from original, but adds slight transparency to containers) */
+    
+    
+    
     .chart-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -462,7 +472,7 @@ font-size: 4em;
         margin: -15em 0;
 }
 
-.spot-illustration{     display:block;   position: relative;     z-index: 3;
+.spot-illustration{    pointer-events:none; display:block;   position: relative;     z-index: 3;
     
   filter: drop-shadow(.0em .05em 2em #0005) drop-shadow(0rem .25rem .12em var(--bg-grad-1));
 
@@ -672,7 +682,7 @@ details[open] > summary > b {
 }
 details[open] {
   padding:3em 1em 1em 1em;
-  animation:ta-dah .3s ease forwards;
+  animation:ta-dah .3s cubic-bezier(.5,.1,.1,1.5) forwards;
   transform-origin: 0% 0%;
   
 }
@@ -753,4 +763,17 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
 
   0%, 50%{box-shadow: 0 0 0 .1rem var(--attn), 0 0 0 1em transparent)}
   60%, 100%{box-shadow: 0 0 0 1rem transparent, 0 0 0 0.1em var(--attn)}
+}
+
+
+
+
+
+.count-up.large{animation: font-swole 2s ease forwards}
+
+@keyframes font-swole{
+  
+  0%{font-size:clamp(20rem, -5rem + 35vw, 35rem)}
+  50%{font-size:clamp(25rem, -5rem + 40vw, 40rem)}
+  100%{font-size:clamp(20rem, -5rem + 35vw, 35rem)}
 }
