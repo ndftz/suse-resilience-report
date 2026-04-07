@@ -731,7 +731,7 @@ details .sample-size {
 
 
 
-details > div{ z-index:9; position:relative;}
+details > div{ z-index:9; position:relative;  pointer-events:none;}
 
 
 details:not([open]) summary{animation: subtle-pulse 5s infinite}
