@@ -800,6 +800,14 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
      grid-template-columns: repeat(5, 1fr);
      width:100%;}
 
+
+@media (max-width: 1200px) {
+  .grid-5-layout{grid-template-columns: repeat(3, 1fr) !important;}
+}
+
+
+
+
     .grid-3-layout{
      display: grid;
      gap: 5rem;
