@@ -347,7 +347,7 @@ html, body {
 
 @media (max-width: 900px) {
 
-
+.grid-5-layout,
   .grid-3-layout,
   .three-links h3,
 .three-links,
@@ -576,13 +576,6 @@ text-shadow: .0em .05em .03em #0c322c55;
 .creative-commmons svg{display:block;margin-bottom:3em}
 
 
-    .grid-3-layout{
-     display: grid;
-     gap: 5rem;
-     align-content: start;
-     grid-template-columns: repeat(3, 1fr);
-    }
-
 .content-layer h2{text-align:center; font-weight:100;      position:relative; font-size:clamp(4rem, -3rem + 10vw, 9rem);text-shadow: 0 0.1em .1em var(--bg-grad-3), 0 .2rem .1rem var(--bg-grad-3);
 padding-top: 20rem; margin-top:0;
 
@@ -793,3 +786,31 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
   50%{font-size:clamp(25rem, -5rem + 40vw, 40rem)}
   100%{font-size:clamp(20rem, -5rem + 35vw, 35rem)}
 }
+
+
+
+
+
+.grid-5-layout{ display: grid;
+     gap: 2rem;
+     align-content: start;
+     grid-template-columns: repeat(5, 1fr);
+     width:100%;}
+
+    .grid-3-layout{
+     display: grid;
+     gap: 5rem;
+     align-content: start;
+     grid-template-columns: repeat(3, 1fr);
+    }
+
+
+.grid-5-layout h4{text-align:center; color:var(--text-main)}
+
+.grid-5-layout .flag{  display:block;  height:8em; background-repeat:no-repeat; background-size: contain; background-position: 50% 50%}
+
+.us .flag{background-image:url('img/us.svg');}
+.gb .flag{background-image:url('img/gb.svg');}
+.in .flag{background-image:url('img/in.svg');}
+.de .flag{background-image:url('img/de.svg');}
+.jp .flag{background-image:url('img/jp.svg');}    
