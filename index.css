@@ -801,9 +801,7 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
      width:100%;}
 
 
-@media (max-width: 1200px) {
-  .grid-5-layout{grid-template-columns: repeat(3, 1fr) !important;}
-}
+
 
 
 
