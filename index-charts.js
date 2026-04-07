@@ -137,7 +137,8 @@
             maintainAspectRatio: false,
             animation: {
               duration: 2000,
-              easing: 'easeOutQuart'
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
             },
             plugins: {
               datalabels: {
@@ -175,7 +176,7 @@
               backgroundColor: [primaryColor, color2, color4],
               
               borderWidth: 0,
-                  borderRadius: 6,
+                  borderRadius: 0,
               hoverOffset: 0
             }]
           },
@@ -243,12 +244,7 @@
             animation: {
               duration: 2000,
               easing: 'easeOutQuart',
-            
-     
-        
-     
-      
-            
+              delay: (context) => context.dataIndex * 100
             },
             
             plugins: {
@@ -329,7 +325,8 @@
             maintainAspectRatio: false,
             animation: {
               duration: 2000,
-              easing: 'easeOutQuart'
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
             },
             plugins: {
               legend: {
