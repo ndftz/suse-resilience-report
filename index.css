@@ -552,7 +552,7 @@ text-shadow: .0em .05em .03em #0c322c55;
 
     .grid-3-layout{
      display: grid;
-     gap: 3rem;
+     gap: 5rem;
      align-content: start;
      grid-template-columns: repeat(3, 1fr);
     }
