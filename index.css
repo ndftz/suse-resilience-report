@@ -677,7 +677,7 @@ details[open] > summary:before {
 summary {
   cursor: pointer;
 background-color: #071f1bcc;
-  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em var(--bg-grad-1);
+  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1b55;
   border-radius: 1em;
   position: absolute;
  
@@ -687,6 +687,7 @@ background-color: #071f1bcc;
   left: 0;
   height: 100%;
   width: 100%;
+      backdrop-filter: blur(3px);
 }
 
 details small {
