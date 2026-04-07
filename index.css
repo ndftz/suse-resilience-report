@@ -14,9 +14,87 @@
       --bg-grad-1: #071f1b;
       --bg-grad-2: #01564a;
       --bg-grad-3: #0c322c;
+
+ 
+    --color-white:       rgb(255, 255, 255);
+    --color-black:       rgb( 0,    0,   0);
+
+    --color-pine:        rgb( 12,  50,  44);
+    --color-jungle:      rgb( 48, 186, 120);
+    --color-mint:        rgb(144, 235, 205);
+    --color-persimmon:   rgb(254, 124,  63);
+    --color-midnight:    rgb( 25,  32, 114);
+    --color-waterhole:   rgb( 36,  83, 255);
+    --color-fog:         rgb(239, 239, 239);
+
+    --color-jungle-1:    var(--color-pine);
+    --color-jungle-2:    rgb(  2,  89,  55);
+    --color-jungle-3:    rgb(  0, 134,  87);
+    --color-jungle-4:    var(--color-jungle);
+    --color-jungle-5:    rgb( 66, 210, 159);
+    --color-jungle-6:    rgb(131, 225, 190);
+    --color-jungle-7:    rgb(192, 239, 222);
+    --color-jungle-8:    rgb(234, 250, 244);
+
+    --color-pine-1:      var(--color-pine);
+    --color-pine-2:      rgb(  1,  86,  74);
+    --color-pine-3:      rgb(  0, 136, 120);
+    --color-pine-4:      rgb(  0, 189, 167);
+    --color-pine-5:      rgb( 56, 213, 180);
+    --color-pine-6:      var(--color-mint);
+    --color-pine-7:      rgb(191, 241, 234);
+    --color-pine-8:      rgb(234, 250, 248);
+
+    --color-persimmon-1: rgb( 71,  25,  13);
+    --color-persimmon-2: rgb(142,  40,  16);
+    --color-persimmon-3: rgb(189,  51,  20);
+    --color-persimmon-4: rgb(255,  90,  43);
+    --color-persimmon-5: rgb(254, 124,  63);
+    --color-persimmon-6: rgb(255, 177, 132);
+    --color-persimmon-7: rgb(255, 211, 189);
+    --color-persimmon-8: rgb(255, 239, 233);
+
+    --color-blue-1:      rgb( 10,  17,  43);
+    --color-blue-2:      rgb( 25,  32, 114);
+    --color-blue-3:      rgb( 11,  65, 183);
+    --color-blue-4:      rgb( 36,  83, 255);
+    --color-blue-5:      rgb( 60, 142, 239);
+    --color-blue-6:      rgb(129, 174, 252);
+    --color-blue-7:      rgb(200, 218, 252);
+    --color-blue-8:      rgb(230, 237, 254);
+
+    --color-fog-1:       rgb( 29,  29,  29);
+    --color-fog-2:       rgb( 62,  62,  62);
+    --color-fog-3:       rgb( 82,  82,  82);
+    --color-fog-4:       rgb(111, 111, 111);
+    --color-fog-5:       rgb(153, 153, 153);
+    --color-fog-6:       rgb(186, 186, 186);
+    --color-fog-7:       rgb(220, 219, 220);
+    --color-fog-8:       rgb(239, 239, 239);
+
+    --color-spectrum-1:  rgb(  0, 189, 167);
+    --color-spectrum-2:  rgb(161, 239, 139); 
+    --color-spectrum-3:  rgb(125, 198, 226); 
+    --color-spectrum-4:  rgb(232, 193, 247); 
+    --color-spectrum-5:  rgb( 93,  79, 153); 
+    --color-spectrum-6:  rgb(249, 202, 191); 
+    --color-spectrum-7:  rgb(252, 178,  68); 
+    --color-spectrum-8:  rgb(189,  51,  20); 
+
+    /*helper variables*/
+    --color-teal:     var(--color-spectrum-1);
+    --color-lime:     var(--color-spectrum-2);
+    --color-sky:      var(--color-spectrum-3);
+    --color-lilac:    var(--color-spectrum-4);
+    --color-amethyst: var(--color-spectrum-5);
+    --color-peach:    var(--color-spectrum-6);
+    --color-marigold: var(--color-spectrum-7);
+    --color-rust:     var(--color-spectrum-8);
     }
 
-    * {
+   
+
+    *,*:before,*:after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -466,7 +544,7 @@ text-shadow: .0em .05em .03em #0c322c55;
      grid-template-columns: repeat(3, 1fr);
     }
 
-.content-layer h2{text-align:center; font-weight:100;      position:relative; font-size:clamp(4rem, -3rem + 10vw, 9rem);text-shadow: 0 0.1em .1em var(--bg-grad-3);
+.content-layer h2{text-align:center; font-weight:100;      position:relative; font-size:clamp(4rem, -3rem + 10vw, 9rem);text-shadow: 0 0.1em .1em var(--bg-grad-3), 0 .2rem .1rem var(--bg-grad-3);
 padding-top: 20rem; margin-top:0;
 
 
@@ -481,7 +559,7 @@ content: "";
         z-index: -1;
         top: 1em;
         width: 100%;
-      opacity:.35;
+      opacity:.6;
         background-image: conic-gradient(from 90deg at 10% 50%, var(--chart-color-4), var(--bg-grad-1)), conic-gradient(from 270deg at 90% 50%, var(--bg-grad-1), var(--chart-color-4));
       -webkit-mask-image: radial-gradient(white 5%, transparent 70%);
         background-position: 1% 0%, 99% 0%;
@@ -501,10 +579,10 @@ content: "";
         width: 50%;
         margin-left: -25%;
         left: 50%;
-      opacity:.5;
-        background-image: radial-gradient(ellipse at top, var(--text-muted), transparent);
-    
-        background-position: 1% 0%, 99% 0%;
+      opacity:.75;
+   
+    background-image: linear-gradient(90deg, transparent, var(--text-muted), transparent);
+       
         background-size: contain;
         background-repeat: no-repeat;}
 
@@ -512,16 +590,19 @@ content: "";
 
 
 .jump-to{background-color:#fff; color:#071f1b; position: fixed; left:0; z-index:999; min-height:1em;box-shadow: 0 .2em 1em;
-display:grid; grid-template-rows: 1fr ;border-radius: 0  2em  2em 0 ; top: 33%; transition: all .4s cubic-bezier(.8,.1,.1,1.2)}
+display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; top: 33%; transition: all .4s cubic-bezier(.7,.1,0,1); }
 
 
-.jump-to:not(:hover){ transform: translateX(-90%); animation: peekaboo 2s infinite;}
-.jump-to:hover{ transform: translateX(0%); }
+.jump-to:not(:hover){ transform: translateX( calc(-100% + 1.5em)); animation: peekaboo 2s infinite;}
+.jump-to:hover{ transform: translateX(0%);   }
 
 @keyframes peekaboo{
-  50%{background-color: #4ff7a3;}
+  50%{background-color: #4ff7a3; background-color: var(--color-persimmon-6); box-shadow: 0 .2em 1em var(--color-persimmon-3);}
 }
 
 
 .jump-to a{padding: .5em 2em; }
 .jump-to a:hover{background-color:#071f1b; color:white;}
+
+
+.jump-to:before{content: "\2192";}
