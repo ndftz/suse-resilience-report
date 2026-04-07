@@ -802,10 +802,12 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
      gap: 5rem;
      align-content: start;
      grid-template-columns: repeat(3, 1fr);
+     color:var(--color-pine-6);line-height:1.3em; font-weight: 300;
     }
 
+    .grid-3-layout h4{color:var(--text-main);  line-height:1.3em;}
 
-.grid-5-layout h4{text-align:center; color:var(--text-main)}
+.grid-5-layout h4{text-align:center; color:var(--text-main); }
 
 .grid-5-layout .flag{  display:block;  height:8em; background-repeat:no-repeat; background-size: contain; background-position: 50% 50%}
 
