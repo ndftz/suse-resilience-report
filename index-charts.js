@@ -349,7 +349,7 @@
             },
             scales: {
               x: {
-                display: false,
+                display: true,
                 ticks: {
                  
                   font: {
