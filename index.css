@@ -307,12 +307,7 @@ html, body {
       min-height: 20rem;
       display: grid;
       place-content: center;
-      /* Made the background slightly more transparent to see the 3D effect better */
-      /*border-radius: 2em;
-      padding: 1.5rem;
-      box-shadow: inset 0 0 0 .1em rgba(255, 255, 255, 0.1), 0 .2em 1em rgba(0, 40, 10, 0.4);
-      */
-      /* Add a subtle blur to the content above background */
+      
     }
 
     .chart-container canvas {

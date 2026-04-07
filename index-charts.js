@@ -50,8 +50,8 @@
       const color5 = '#5dfcbc';
       const color6 = '#c0efde';
       const color7 = '#071f1b';
-      const colorDarkFog = '#33453f';
-      const colorMediumFog = '#809b8f';
+      const colorDarkFog = '#2b564b';
+      const colorMediumFog = '#6ea18b';
       const colorLightFog = '#eee';
       if (chartId === 'verticalBarChart') {
         new Chart(ctx, {
