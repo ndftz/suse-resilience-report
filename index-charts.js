@@ -33,7 +33,7 @@
     Chart.register(ChartDataLabels);
 
     // Global Chart Defaults for our theme (preserved from original)
-    Chart.defaults.plugins.tooltip.enabled = true;
+    Chart.defaults.plugins.tooltip.enabled = false;
     Chart.defaults.color = '#c0efde';
     Chart.defaults.font.family = '"SUSE", sans-serif';
     Chart.defaults.font.size = 18;
