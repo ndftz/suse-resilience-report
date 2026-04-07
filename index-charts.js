@@ -44,13 +44,14 @@
     const renderChart = (chartId) => {
       const ctx = document.getElementById(chartId).getContext('2d');
       const primaryColor = '#30ba78';
-      const color3 = '#1e754b';
+      const color3 = '#145b39';
       const color2 = '#a1ef8b';
       const color4 = '#279963';
       const color5 = '#5dfcbc';
       const color6 = '#c0efde';
       const color7 = '#071f1b';
       const colorDarkFog = '#2b564b';
+      const colorWhite = '#ffffff';
       const colorMediumFog = '#6ea18b';
       const colorLightFog = '#eee';
       if (chartId === 'verticalBarChart') {
@@ -122,10 +123,13 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
+            
             labels: ['Flexibility', 'Innovation', 'Trust', 'Cost Efficiency', 'Resilience', 'Freedom', 'Control', 'Strategic Independence', 'Reducing Lock-in', 'Long-term Survival', 'Complexity', 'Democratic Ideals'],
             datasets: [{
               label: 'Percentage',
               data: [60, 54, 48, 43, 43, 41, 39, 38, 25, 22, 20, 18],
+              
+
               backgroundColor: [
                 primaryColor, primaryColor, primaryColor, primaryColor, 
                 color6, // Resilience highlighted
@@ -144,10 +148,13 @@
               delay: (context) => context.dataIndex * 100
             },
             plugins: {
+              legend: {
+                display: false
+              },
               datalabels: {
                 anchor: 'end',
                 align: 'start',
-                color: '#071f1b',
+                color: [ color3, color3, color3, color3, color7, color3, color3, color3, color3, color3, color3, color3],
                 offset: 10,
                 font: {
                   weight: '600',
@@ -161,6 +168,7 @@
                 display: false,
               },
               y: {
+                
                 grid: {
                   display: false
                 }
