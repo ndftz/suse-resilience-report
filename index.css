@@ -14,7 +14,9 @@
       --bg-grad-1: #071f1b;
       --bg-grad-2: #01564a;
       --bg-grad-3: #0c322c;
-        --attn:#ffd3bd;
+        --attn:var(--color-persimmon-5);
+
+
          --bg-2:#ffd3bd33;
 
  
@@ -623,7 +625,7 @@ summary {
 
 
 details {
-  display: inline-block; margin: 1em;
+  display: inline-block; margin: 1em; margin-left:0;
   position: absolute;
   z-index:4;
   min-height: 1.9em;
@@ -706,8 +708,19 @@ details .sample-size {
   text-align: right;
   position: absolute; pointer-events:none;
   top: -2.5em;
-  right: 0.5em;
+  right: 0em;
   color: var(--attn); font-weight: 300;
 }
 
+
+
 details > div{ z-index:9; position:relative;}
+
+
+details:not([open]) summary{animation: subtle-pulse 5s infinite}
+
+@keyframes subtle-pulse{
+
+  0%, 50%{box-shadow: 0 0 0 .1rem var(--attn), 0 0 0 1em transparent)}
+  60%, 100%{box-shadow: 0 0 0 1rem transparent, 0 0 0 0.1em var(--attn)}
+}
