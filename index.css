@@ -189,7 +189,7 @@ html, body {
     .container {
       max-width: 1200px;
       margin: 10rem auto;
-      padding: 0 2rem;
+      padding:  2rem;
     
     }
 
@@ -704,8 +704,20 @@ details[open] > summary{  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1
 details:not([open]) > summary{  box-shadow: 0 0 0 0.1em var(--attn)}
 
 details small {
-  opacity: 0.5;
-} /* for select all that apply */
+  white-space: :nowrap;
+  opacity:.5;
+    display: inline-block;
+    padding: .1em 1em;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'SUSE Mono';
+    color: white;
+    box-shadow: 0 0 0 .1rem;
+    margin: .5em;
+    font-size: 1rem;
+}
+ /* for select all that apply */
 
 details .sample-size {
   text-align: right;
