@@ -343,6 +343,11 @@ footer svg{margin: 0 auto;}
 h1 {
 font-size: 4em;
 }
+
+/*prominent headers on mobile*/
+.content-layer h2{padding-top: 10rem !important;
+        font-weight: 500 !important;;}
+
 }
 
 
@@ -599,7 +604,7 @@ display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; bottom:
 .jump-to:hover{ transform: translateX(0%);   }
 
 @keyframes peekaboo{
-  50%{background-color: #4ff7a3; background-color: var(--color-persimmon-6); box-shadow: 0 .2em 1em var(--color-persimmon-3);}
+  50%{background-color: #4ff7a3; background-color: var(--color-persimmon-6); margin-left:-.25em; box-shadow: 0 .2em 1em var(--color-persimmon-3);}
 }
 
 
@@ -676,7 +681,7 @@ details[open] > summary:before {
 
 summary {
   cursor: pointer;
-background-color: #071f1bcc;
+  
   box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1b55;
   border-radius: 1em;
   position: absolute;
@@ -689,6 +694,9 @@ background-color: #071f1bcc;
   width: 100%;
       backdrop-filter: blur(3px);
 }
+
+details[open] > summary{  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1b55; background-color: #071f1bcc;}
+details:not([open]) > summary{  box-shadow: 0 0 0 0.1em var(--attn)}
 
 details small {
   opacity: 0.5;
