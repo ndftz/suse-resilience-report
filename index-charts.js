@@ -125,7 +125,7 @@
               data: [60, 54, 48, 43, 43, 41, 39, 38, 25, 22, 20, 18],
               backgroundColor: [
                 primaryColor, primaryColor, primaryColor, primaryColor, 
-                color2, // Resilience highlighted
+                color6, // Resilience highlighted
                 primaryColor, primaryColor, primaryColor, primaryColor, primaryColor, primaryColor
               ],
               borderRadius: 6
@@ -272,6 +272,7 @@
                     align: 'start',
                     clamp: true,
                     color: '#071f1b',
+                    
                     offset: -5,
                     font: { weight: '600', size: 22 },
                     formatter: (value) => value
@@ -316,7 +317,10 @@
             datasets: [{
               label: 'Percentage',
               data: [23, 28, 44, 5],
-              backgroundColor: primaryColor,
+             
+                            backgroundColor: [color6, color6, color3, color3],
+              
+
               borderRadius: 6
             }]
           },
@@ -336,10 +340,11 @@
                 anchor: 'end',
                 align: 'top',
                 color: '#071f1b',
-                offset: -30,
+                color: [color7, color7, color6, color6, color6],
+                offset: -40,
                 font: {
                   weight: '600',
-                  size: 16
+                  size: 20
                 },
                 formatter: (value) => value + '%'
               }
