@@ -272,7 +272,7 @@ html, body {
     .chart-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
-     
+     gap:3rem;
       align-items: center;
       width: 100%;
     }
@@ -293,6 +293,7 @@ html, body {
       grid-template-columns: 1fr 2fr;
     }
 
+    .text-content{align-self:start}
     .chart-layout.reverse .text-content {
       order: 2;
     }
@@ -355,6 +356,8 @@ html, body {
 .chart-layout.reverse {
 grid-template-columns: 1fr !important;grid-column: span 1 !important;
 }
+
+
 
 .chart-layout.reverse .text-content {
 order: 1;
@@ -663,9 +666,10 @@ details {
   z-index:4;
   min-height: 1.9em;
   padding-top: 1.5em;
-  top: 100%;
 
 }
+
+details.base{top:100%}
 summary {
   user-select: none;  
 }
