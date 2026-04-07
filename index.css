@@ -14,6 +14,8 @@
       --bg-grad-1: #071f1b;
       --bg-grad-2: #01564a;
       --bg-grad-3: #0c322c;
+        --attn:#ffd3bd;
+         --bg-2:#ffd3bd33;
 
  
     --color-white:       rgb(255, 255, 255);
@@ -602,6 +604,101 @@ display:grid; grid-template-rows: 1fr ;border-radius: 0  1.5em 1.5em 0 ; bottom:
 
 
 .jump-to a{padding: .5em 2em; }
-.jump-to a:hover{background-color:#071f1b; color:white;}
+.jump-to a:hover{background-color:var(--chart-color-2); color:white;}
 
 
+
+
+details,
+summary {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+
+details {
+  display: inline-block; margin: 1em;
+  position: absolute;
+  z-index:4;
+  min-height: 1.9em;
+  padding-top: 1.5em;
+
+}
+summary {
+  user-select: none;  
+}
+
+details > summary > b {
+  opacity: 0;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  padding: 0 1em 0 0.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  background-color: var(--attn); color: var(--bg-grad-1);
+}
+
+details:not([open]) {
+  width: 1.9em;
+  height: 1.9em;
+}
+details[open] > summary > b {
+  opacity: 1;
+}
+details[open] {
+  padding:3em 1em 1em 1em;
+  
+}
+details > summary:before {
+  content: "?";
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  font-weight: 800;
+  display: block;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  background-color: var(--attn); color: var(--bg-base);
+}
+
+details[open] > summary:before {
+  opacity: 0;
+}
+
+summary {
+  cursor: pointer;
+background-color: #071f1bcc;
+  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em var(--bg-grad-1);
+  border-radius: 1em;
+  position: absolute;
+ 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+details small {
+  opacity: 0.5;
+} /* for select all that apply */
+
+details .sample-size {
+  text-align: right;
+  position: absolute; pointer-events:none;
+  top: -2.5em;
+  right: 0.5em;
+  color: var(--attn); font-weight: 300;
+}
+
+details > div{ z-index:9; position:relative;}
