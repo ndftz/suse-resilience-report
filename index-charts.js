@@ -321,7 +321,7 @@
               label: 'Percentage',
               data: [23, 28, 44, 5],
              
-                            backgroundColor: [color6, color6, colorDarkFog, colorDarkFog],
+                            backgroundColor: [primaryColor, primaryColor, colorDarkFog, colorDarkFog],
               
 
               borderRadius: 6
