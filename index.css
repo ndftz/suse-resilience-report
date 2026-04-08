@@ -267,7 +267,7 @@ html, body {
 
 .spot-layout {
       display: grid;
-      grid-template-columns: .6fr 1fr;
+      grid-template-columns: .4fr 1fr;
            order: 1;
 }
 
@@ -608,6 +608,8 @@ padding-top: 20rem; margin-top:0;
 
 }    
 
+
+.content-layer .subtitle{text-align: center;}
 .content-layer h2:before{
 content: "";
         display: block;
@@ -885,6 +887,8 @@ animation:shimmer 35s linear infinite;
 
 
 @media (max-width:600px){
+
+.dangling-geeko{transform:translateX(-20vw)}
 
   .grid-5-layout h4,  
   .grid-5-layout > div{grid-template-columns: 1fr; text-align:center;}
