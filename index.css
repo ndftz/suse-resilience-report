@@ -713,6 +713,7 @@ details[open] {
   padding:3em 1em 1em 1em;
   animation:ta-dah .3s cubic-bezier(.5,.1,.1,1.5) forwards;
   transform-origin: 0% 0%;
+ 
   
 }
 @keyframes ta-dah {
@@ -754,7 +755,7 @@ summary {
       backdrop-filter: blur(3px);
 }
 
-details[open] > summary{  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1b55; background-color: #071f1bcc;}
+details[open] > summary{  box-shadow: 0 0 0 0.1em var(--attn), 0 .5em 1em #071f1b55; background-color: #071f1bff;   backdrop-filter: blur(3px);}
 details:not([open]) > summary{  box-shadow: 0 0 0 0.1em var(--attn)}
 
 details small {
@@ -867,3 +868,9 @@ animation:shimmer 35s linear infinite;
   0%{background-position:  1800% 0% }
   100%{background-position:  -1800% 0%  }
 }
+
+
+.sw{display:inline-block; width:1em; height:1em; background-color: var(--color-jungle); margin-right:1rem; border-radius: 50%}
+
+.sw-2{background-color:#a1ef8b}
+.sw-3{background-color:#145b39}
