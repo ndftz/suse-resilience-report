@@ -1,12 +1,13 @@
 
 
    :root {
-      /* Existing colors */
+    
+       /* Existing colors */
       --bg-base: #0c322c;
       /* Original background */
       --primary-color: #30ba78;
       --text-main: #ffffff;
-      --text-muted: #9ec3b9;
+      --text-muted: #9ec3b9;  
       --chart-color-2: #1e754b;
       --chart-color-3: #4ff7a3;
       --chart-color-4: #279963;
@@ -96,6 +97,7 @@
     --color-rust:     var(--color-spectrum-8);
     }
 
+:root{   background-color:  rgb( 12,  50,  44);}
    
 
     *,*:before,*:after {
