@@ -232,17 +232,17 @@
             labels: ['Priority ', 'Medium ', 'Low ', 'Unsure '],
             datasets: [
               {
-                label: 'Done',
+                label: 'Have Strategy',
                 data: [62, 17, 20, 10],
                 backgroundColor: primaryColor
               },
               {
-                label: 'In Progress',
+                label: 'Developing Strategy',
                 data: [35, 72, 60, 30],
                 backgroundColor: color2
               },
               {
-                label: 'Not Yet',
+                label: 'We need one soon',
                 data: [3, 11, 20, 60],
                 backgroundColor: color3
               }
