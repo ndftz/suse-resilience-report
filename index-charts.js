@@ -234,17 +234,17 @@
               {
                 label: 'Have Strategy',
                 data: [62, 17, 20, 10],
-                backgroundColor: primaryColor
+                backgroundColor: color2
               },
               {
                 label: 'Developing Strategy',
                 data: [35, 72, 60, 30],
-                backgroundColor: color2
+                backgroundColor: primaryColor
               },
               {
                 label: 'We need one soon',
                 data: [3, 11, 20, 60],
-                backgroundColor: color3
+                backgroundColor: colorMediumFog
               }
             ]
           },

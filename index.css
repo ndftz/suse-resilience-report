@@ -702,13 +702,23 @@ details > summary > b {
   border-radius: 1.5em;
   position: absolute;
   top: 0.2em;
+  font-family: "SUSE Mono", SUSE;
   left: 0.2em;
-  padding: 0 1em 0 0.5em;
+  padding: 0 1em 0 1em;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-weight: 700;
   background-color: var(--attn); color: var(--bg-grad-1);
 }
+
+details[open] > summary:after{content:"+"; font-size: 1.5em;  position:absolute; right:.1em; top: .1em; display:block; text-align:center;width: 1em; height:1em; line-height:1em;
+    position: absolute;
+    font-weight: 300;;
+  display:block;
+  color:var(--color-persimmon-6);
+  background-color: #0004; border-radius: 50%;)}
+
+
+  details[open] > summary:hover:after{background-color:var(--color-persimmon-3); color:white;}
 
 details:not([open]) {
   width: 1.9em;
@@ -744,7 +754,9 @@ details > summary:before {
 }
 
 details[open] > summary:before {
-  opacity: 0;
+  width: 150%; height:150%;
+  background-color: var(-attn); border-radius: 1em; content:"";
+  opacity: 0; left: -25%; top:-25%; bottom:-25%; right:-25%; 
 }
 
 summary {
@@ -768,7 +780,6 @@ details:not([open]) > summary{  box-shadow: 0 0 0 0.1em var(--attn)}
 
 details small {
   white-space: :nowrap;
-
     display: inline-block;
     padding: .1em 1em;
     border-radius: 1em;
@@ -785,7 +796,7 @@ details small {
 details .sample-size {
   text-align: right;
   position: absolute; pointer-events:none;
-  top: -2.5em;
+  bottom: -2em;
   right: 0em;
   color: var(--attn); font-weight: 300;
 }
@@ -835,6 +846,8 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
 .grid-5-layout .flag{ position:relative; display:block;  font-size: 2em; width: 8em;height:6em;   font-size:clamp(1rem, 2vw, 2rem); background-repeat:no-repeat; background-size: cover; background-position: 50% 50%;   
   box-shadow:.0em .05em 1em #0c322c55, 0rem .25rem .12em  #0c322caa, inset 0 1px #fff8, inset 0 -1px #0004;   overflow: hidden;
     border-radius: 1em; margin: 1em 0;
+
+
  }
 
     .grid-3-layout{
@@ -858,17 +871,23 @@ details:not([open]) summary{animation: subtle-pulse 5s infinite}
 
 
 .flag:before{content:""; display: block; height:100%;  background-image:linear-gradient(90deg, white, black, white);
-  
+
   background-image: repeating-linear-gradient(
-    -45deg,
+    0deg,
     white 0%, 
-    black 25%, 
-    white 50%,
-    black 75%,
-    white 100%
+    black 10%, 
+    white 20%,
+    black 30%,
+    white 40%,
+    black 50%,
+    white 60%,
+    black 70%,
+    white 80%,
+    black 90%,
+    white 100%,
     
   );
-  background-size: 20rem 20rem;  opacity:.5;background-position: top left; mix-blend-mode: soft-light;
+  background-size: 20rem 20rem;  opacity:.25;background-position: top left; mix-blend-mode: luminosity;
 animation:shimmer 35s linear infinite;
 }
 
@@ -880,8 +899,9 @@ animation:shimmer 35s linear infinite;
 
 .sw{display:inline-block; width:1em; height:1em; background-color: var(--color-jungle); margin-right:1rem; border-radius: 50%}
 
-.sw-2{background-color:#a1ef8b}
-.sw-3{background-color:#145b39}
+.sw-1{background-color: #a1ef8b}
+.sw-2{background-color:var(--color-jungle)}
+.sw-3{background-color:#6ea18b}
 
 
 
