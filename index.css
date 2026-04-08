@@ -738,6 +738,7 @@ details[open] {
 @keyframes ta-dah {
   0%{transform:scale(.9); opacity:0;}
 }
+details *{outline:none} /*forgive me a11y folks*/
 
 details > summary:before {
   content: "?";
@@ -754,7 +755,11 @@ details > summary:before {
   background-color: var(--attn); color: var(--bg-base);
 }
 
+
+details > summary:focus:before{background-color:white}
+
 details[open] > summary:before {
+
   width: 150%; height:150%;
   background-color: var(-attn); border-radius: 1em; content:"";
   opacity: 0; left: -25%; top:-25%; bottom:-25%; right:-25%; 
