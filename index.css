@@ -712,6 +712,7 @@ details > summary > b {
 
 details[open] > summary:after{content:"+"; font-size: 1.5em;  position:absolute; right:.1em; top: .1em; display:block; text-align:center;width: 1em; height:1em; line-height:1em;
     position: absolute;
+    transform: rotate(45deg);
     font-weight: 300;;
   display:block;
   color:var(--color-persimmon-6);
