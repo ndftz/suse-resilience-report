@@ -105,6 +105,8 @@
     
     }
 
+    body{background-color:#071f1b;}
+
 html, body {
 
       background-color:var(--bg-grad-1);
