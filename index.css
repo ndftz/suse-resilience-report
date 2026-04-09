@@ -1,5 +1,3 @@
-
-
    :root {
     
        /* Existing colors */
@@ -98,6 +96,35 @@
     }
 :root {
   background-color: rgb(12, 50, 44);
+}
+
+
+@font-face {
+  font-family: 'SUSE';
+  src: url('fonts/SUSE[wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUSE';
+  src: url('fonts/SUSE-Italic[wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SUSE Mono';
+  src: url('fonts/SUSEMono[wght].ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUSE Mono';
+  src: url('fonts/SUSEMono-Italic[wght].ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: italic;
 }
 
 
@@ -783,17 +810,20 @@ svg * {
 }
 
 .quote-layout blockquote:before {
-  font-style: normal;
 
 
-  content: "❝";
-  color: var(--primary-color);
-  font-size: 6em;
-  display: block;
-  font-family: "SUSE", sans-serif;
-  position: absolute;
-  left: 0;
-  top: -.30em;
+
+    content: "❝";
+    color: var(--primary-color);
+    font-size: 6em;
+    display: block;
+    font-family: "SUSE", sans-serif;
+    position: absolute;
+    font-weight: 500;
+    left: -2rem;
+    top: -5rem;
+;
+    font-style: normal;
 }
 
 
