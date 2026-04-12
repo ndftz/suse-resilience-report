@@ -33,7 +33,7 @@
     Chart.register(ChartDataLabels);
 
     // Global Chart Defaults for our theme (preserved from original)
-    Chart.defaults.plugins.tooltip.enabled = false;
+    Chart.defaults.plugins.tooltip.enabled = true;
     Chart.defaults.color = '#c0efde';
     Chart.defaults.font.family = '"SUSE", sans-serif';
     Chart.defaults.font.size = 18;
@@ -61,12 +61,12 @@
             labels: ['USA', 'Europe', 'APAC', ],
             datasets: [{
               label: 'regions',
-              data: [100, 106, 51],
+              data: [100, 106, 103],
               backgroundColor: [primaryColor, color2, color3, color4, color5],
               borderWidth: 0,
-              offset: 30, 
-              borderRadius: 6,
-              hoverOffset: 30
+              offset: 0, 
+              borderRadius: 0,
+              hoverOffset: 0
             }]
           },
           options: {
@@ -103,7 +103,7 @@
                 
                 clamp: true,
                 align: 'start',
-                offset: 30,
+                offset: 10,
                 font: {
                   weight: 'bold',
                   
@@ -172,54 +172,6 @@
                 grid: {
                   display: false
                 }
-              }
-            }
-          }
-        });
-      }
-      if (chartId === 'pieChart') {
-        new Chart(ctx, {
-          type: 'doughnut',
-          data: {
-            labels: ['yeah', 'maybe', 'nah'],
-            datasets: [{
-              data: [55, 35, 10],
-              backgroundColor: [primaryColor, color2, color4],
-              
-              borderWidth: 0,
-                  borderRadius: 0,
-              hoverOffset: 0
-            }]
-          },
-          options: {
-            rotation: 15,
-            responsive: true,
-            maintainAspectRatio: false,
-            animation: {
-              animateRotate: true,
-              animateScale: true,
-              duration: 2000
-            },
-            plugins: {
-              legend: {
-                usePointStyle: true, 
-                pointStyle: 'circle',
-                position: 'none',
-                labels: {
-                  padding: 20,
-                }
-              },
-              datalabels: {
-                color: '#071f1b',
-                font: {
-                  align: 'center',
-                  weight: '600'
-                },
-                formatter: (value, context) => {
-                  const label = context.chart.data.labels[context.dataIndex];
-                  return label + '\n' + value + '%';
-                }
-                
               }
             }
           }
@@ -324,14 +276,383 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Yes Major Incident', 'Yes Minor Incident', 'No Breach', 'Not Sure'],
+            labels: ['Breached', 'Not Breached'],
             datasets: [{
               label: 'Percentage',
-              data: [23, 28, 44, 5],
-             
-                            backgroundColor: [primaryColor, primaryColor, colorDarkFog, colorDarkFog],
+              data: [51, 49],
+              backgroundColor: [primaryColor, color3],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
+            },
+            plugins: {
+              legend: {
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'end',
+                color: [ color7, colorMediumFog],
+                offset: -80,
+                font: {
+                  weight: '800',
+                  size: 25
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                display: false,
+                beginAtZero: true,
+                grid: {
+                  display: false
+                }
+              },
+              y: {
+                grid: {
+                  display: false
+                }
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'rolesChart') {
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Corporate', 'Function', 'Practice'],
+            datasets: [{
+              data: [165, 95, 49],
+              backgroundColor: [primaryColor, color2, color4],
+              
+              borderWidth: 0,
+               
+
+                            offset: 0, 
+              borderRadius: 0,
+              hoverOffset: 0
+            }]
+          },
+          options: {
+            rotation: -90,
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              animateRotate: true,
+              animateScale: true,
+              duration: 2000
+            },
+            plugins: {
+              legend: {
+                usePointStyle: true, 
+                pointStyle: 'circle',
+                position: 'none',
+                labels: {
+                  padding: 20,
+                }
+              },
+              datalabels: {
+                color: ['#071f1b', colorDarkFog, color6, ],
+                font: {
+                  align: 'center',
+                  size:23,
+                  weight: '600'
+                },
+                formatter: (value, context) => {
+                  const label = context.chart.data.labels[context.dataIndex];
+                  return label + '\n' + value;
+                }
+                
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'decisionMakersChart') {
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Fully', 'Very'],
+            datasets: [{
+              data: [67, 33],
+              backgroundColor: [primaryColor, color2],
+              
+              borderWidth: 0,
+                  borderRadius: 0,
+              hoverOffset: 0
+            }]
+          },
+          options: {
+            rotation: -120,
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              animateRotate: true,
+              animateScale: true,
+              duration: 2000
+            },
+            plugins: {
+              legend: {
+                usePointStyle: true, 
+                pointStyle: 'circle',
+                position: 'none',
+                labels: {
+                  padding: 20,
+                }
+              },
+              datalabels: {
+                color: '#071f1b',
+                font: {
+                  size:18,
+                  align: 'center',
+                  weight: '600'
+                },
+                formatter: (value, context) => {
+                  const label = context.chart.data.labels[context.dataIndex];
+                  return label + '\n' + value + '%';
+                }
+                
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'employeeCountChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['501-1000', '1001-5000', '5001+'],
+            datasets: [{
+              label: 'Percentage',
+              data: [51, 195, 63],
+              backgroundColor: [primaryColor, primaryColor, primaryColor],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
+            },
+            plugins: {
+              legend: {
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'top',
+                color:[  '#071f1b', '#071f1b', '#071f1b' ],
+                offset: -30,
+                font: {
+                  weight: '600',
+                  size: 20
+                },
+                formatter: (value) => value
+              }
+            },
+            scales: {
+              x: {
+                display: true,
+                ticks: {
+                  font: {
+                    size: 14
+                  }
+                },
+                grid: {
+                  display: false
+                }
+              },
+              y: {
+                display: false,
+                beginAtZero: true,
+                ticks: {
+                  display: false
+                },
+                grid: {
+                  display: false
+                }
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'industriesChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            
+            labels: ['Manufacturing', 'Consulting', 'Financial', 'Retail', 'Healthcare', 'Telco', 'Automotive', 'Transport / Logistics', 'Education', 'Aerospace', 'Property', 'Government'],
+            datasets: [{
+              label: 'number',
+              data: [64, 51, 42, 36, 26, 18, 18, 13, 5, 5, 4, 3],
+           
               
 
+              backgroundColor: 
+                primaryColor,
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y', // This makes the bar chart horizontal
+            responsive: true,
+            
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
+            },
+            plugins: {
+              legend: {
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'end',
+                color: primaryColor, offset: 5,
+                font: {
+                  weight: '400',
+                  size: 18
+                },
+                formatter: (value) => value + ''
+              }
+            },
+            scales: {
+              x: {
+                display: false,
+              },
+              y: {
+
+                grid: {
+                  display: false
+                },
+                ticks: {
+                  font: {
+                    size: 12
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'breachedConfidenceChart') {
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Very', 'Confident', 'Somewhat', 'None'],
+            datasets: [{
+              data: [63, 30, 4, 3],
+              backgroundColor: [color2, primaryColor, color4, colorDarkFog],
+              
+              borderWidth: 0,
+                  borderRadius: 0,
+              hoverOffset: 0
+            }]
+          },
+          options: {
+            rotation: 0,
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              animateRotate: true,
+              animateScale: true,
+              duration: 2000
+            },
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: {
+                  usePointStyle: true,
+                  pointStyle: 'circle',
+                  padding: 20
+                }
+              },
+              datalabels: {
+
+                color: ['#071f1b','#071f1b', null, null ],
+                font: {
+                  weight: '600',
+                  size: 28
+                },
+                formatter: (value) => value + '%'
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'notBreachedConfidenceChart') {
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Very', 'Confident', 'Somewhat', 'None'],
+            datasets: [{
+              data: [37, 45, 13, 5],
+              backgroundColor: [color2, primaryColor, color4, colorDarkFog],
+              
+              borderWidth: 0,
+                  borderRadius: 0,
+              hoverOffset: 0
+            }]
+          },
+          options: {
+            rotation: 0,
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              animateRotate: true,
+              animateScale: true,
+              duration: 2000
+            },
+            plugins: {
+              legend: {
+                position: 'bottom',
+
+                labels: {
+                  usePointStyle: true,
+                  pointStyle: 'circle',
+                  padding: 20
+                }
+              },
+              datalabels: {
+                                clamp: true,
+                align: 'end',
+                offset: -10,
+                color: ['#071f1b','#071f1b', colorDarkFog, null, null ],
+                font: {
+                  weight: '600',
+                  size: 22
+                },
+                formatter: (value) => value + '%'
+
+              }
+            }
+          }
+        });
+      }
+      if (chartId === 'strategyChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Yes, in place', 'Developing', 'Needed'],
+            datasets: [{
+              label: 'Percentage',
+              data: [67, 42, 8],
+              backgroundColor: [primaryColor, color2, color4],
               borderRadius: 6
             }]
           },
@@ -351,7 +672,6 @@
                 anchor: 'end',
                 align: 'top',
                 color: '#071f1b',
-                color: [color7, color7, colorMediumFog, colorMediumFog, color6],
                 offset: -40,
                 font: {
                   weight: '600',
@@ -364,7 +684,6 @@
               x: {
                 display: true,
                 ticks: {
-                 
                   font: {
                     size: 14
                   }

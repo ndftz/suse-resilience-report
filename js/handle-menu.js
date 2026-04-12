@@ -1,6 +1,46 @@
 document.addEventListener('DOMContentLoaded', function () {
- handleHeaderUltilites()
+  handleHeaderUltilites();
+  handleTocActiveState();
 });
+
+function handleTocActiveState() {
+  const tocLinks = document.querySelectorAll('.jump-to a[href^="#"]');
+  if (!tocLinks.length) return;
+
+  // Build a map of id → toc link
+  const linkMap = {};
+  tocLinks.forEach(link => {
+    const id = link.getAttribute('href').slice(1);
+    linkMap[id] = link;
+  });
+
+  // Collect the target elements (sections or standalone headings)
+  const targets = Array.from(tocLinks).map(link => {
+    const id = link.getAttribute('href').slice(1);
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  let currentActive = null;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = linkMap[id];
+      if (!link) return;
+
+      if (entry.isIntersecting) {
+        if (currentActive) currentActive.classList.remove('active');
+        link.classList.add('active');
+        currentActive = link;
+      }
+    });
+  }, {
+    rootMargin: '-10% 0px -60% 0px',
+    threshold: 0
+  });
+
+  targets.forEach(el => observer.observe(el));
+}
 function handleHeaderUltilites() {
 	const header = document.querySelector('.header');
 	let lastScrollTop = 0;
