@@ -878,6 +878,7 @@ svg * {
   color: var(--text-muted);
   font-weight:200; font-style: italic;position:relative; z-index:2
 }
+.quote-layout blockquote b{color:white}
 
 .quote-layout cite:before {
   content: "— ";
