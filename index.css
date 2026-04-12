@@ -857,7 +857,7 @@ svg * {
       margin: 4rem 0;
       /*background: var(--bg-grad-1); */
       border-radius: 1.8rem 1.8rem 1rem 1.8rem ;
-      box-shadow: inset 0 .1rem #fff2, 0 .2em 3em #071f1baa;
+      box-shadow:   inset 0 .1rem #a1ef8b22, 0 0 0 .1rem #0004, 0 .2em 2em #071f1baa;
       background-color: #071f1baa;
         position: relative;
         padding:.5em 0;
@@ -1157,8 +1157,6 @@ summary {
   margin: 0;
   display: block;
 }
-
-figcaption{position:absolute; bottom:-2rem; width:100%;  text-align:center; font-size: .8rem; color:var(--text-muted)}
 
 .survey-details {
   display: inline-block;
@@ -1485,8 +1483,7 @@ details>div {
     box-shadow: 0 .2em 3em #071f1baa;
    background-color: #071f1baa;
     position: relative;
-          box-shadow: inset 0 .1rem #fff2, 0 .2em 3em #071f1baa;
-
+  box-shadow: inset 0 .1rem #a1ef8b22, 0 0 0 .1rem #0004, 0 .2em 2em #071f1baa;
   }
 
  .grid-3-layout.custom .quote-layout{background-color:transparent}
@@ -1631,7 +1628,7 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 @media (max-height:600px){
    .jump-to a { padding: .5rem 1em !important;}
-   .jump-to{top: 4em;}
+   .jump-to{top: 2em;}
 
 }
 
@@ -1801,6 +1798,8 @@ article h2{padding-bottom:4rem;}
 
 #regional li b{color:white}
 
+figure{margin-bottom:2em;}
+figcaption{position:absolute; bottom:-4rem; width:100%;  text-align:center; font-size: .8rem; color:var(--text-muted)}
 
 
 #audience h2{margin:0; padding:0; background-image:none; margin-top:1em !important;
