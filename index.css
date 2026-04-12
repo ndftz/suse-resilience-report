@@ -1622,6 +1622,12 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 
 
+@media (max-height:600px){
+   .jump-to a { padding: .5rem 1em !important;}
+   .jump-to{top: 4em;}
+
+}
+
 .jump-to,
 .toc-container{background-color:transparent !important; box-shadow:none !important;}
 
