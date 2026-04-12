@@ -329,7 +329,7 @@ section {
 }
 
 .scroll-indicator {
-    margin: 0 0 3em 0;  padding: 2em;
+    margin: 5em 0;  padding: 2em;
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -556,6 +556,10 @@ article p {
 
 .classification{display: grid;
     grid-template-rows: 1fr ;}
+
+
+
+
 
 } /* end mobile */
 
