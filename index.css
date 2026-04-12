@@ -335,6 +335,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--primary-color);
+  color: var(--color-persimmon-6);
   text-decoration: none;
   animation: bounce 2s infinite;
 }
@@ -380,9 +381,10 @@ display:grid; grid-template-columns: 5em 1fr 1fr;
 .demographics details{max-height:17em; transition: all .2s ease-in}
 
 .demographics details[open]{background-color: #01564a77; border-radius: 1em;box-shadow: 0 .2em 1em var(--bg-base), inset 0 .1rem #fff2;
-max-height: 69em;
+max-height: 69em; }
 
-}
+@media (min-width: 700px){.demographics details[open]{height:72em;}}
+@media (max-width: 700px){.demographics details[open]{max:75em;}}
 
 
 summary{cursor:pointer}
@@ -969,7 +971,7 @@ footer h3 {
 
 .count-up.percent:after {
   content: "%";
-  text-shadow: 0em .05em 1em #071f1b, 0rem .25rem .12rem #071f1b;
+  text-shadow: .025em .081em .1em var(--bg-base);
   font-size: .6em;
   font-weight: 500;
   color: #279963;
