@@ -1645,7 +1645,7 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 
 
-.jump-to a.active:hover,.jump-to a.active{color:white; background-color:var(--bg-grad-2); box-shadow: inset 0 .1rem .1rem #fff5, 0 .2rem 1rem #071f1b99;}
+.jump-to a.active:hover,.jump-to a.active{color:white; background-color:var(--bg-grad-2); box-shadow: inset 0 .1rem #a1ef8b22, 0 .2rem 1rem #071f1b99;}
 
 .jump-to a:hover{ box-shadow:   0 .2rem 1rem #071f1b99;}
 .jump-to a:hover:before{background-color: #6ea18b; }
