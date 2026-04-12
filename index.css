@@ -1497,6 +1497,11 @@ details>div {
 .grid-3-layout.custom .quote-layout blockquote:after{ content:""}
 
 
+article blockquote b {
+  box-shadow: 0 .15rem var(--color-jungle-2);
+  background-color: #1e754b55;
+  text-shadow: 0 .1rem .2rem var(--bg-base)
+}
 .grid-3-layout h4 {
   color: var(--text-main);
   line-height: 1.3em;
@@ -1773,6 +1778,17 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   text-shadow: 0 .1rem .1rem var(--color-jungle-5)
 }
 
+
+.reason-list.hot li {
+    background-color: var(--color-persimmon-7);
+    color: var(--color-persimmon-1);
+    box-shadow: inset 0 .1rem 1rem var(--color-persimmon-8), 0 .1em .5em var(--color-persimmon-1), inset 0 -.1rem var(--color-persimmon-8);
+    text-shadow: 0 .1rem .05rem #fff5;
+    padding: .5em 1.25em .5em .7em;
+    font-weight: 500;
+    border-radius: 2em;clear: left;
+    float: left;}
+.reason-list.hot li:before{color:var(--color-persimmon-3)}
 
 .reason-list.compact ol li {}
 
