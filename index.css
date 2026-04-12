@@ -882,9 +882,10 @@ svg * {
   font-style: normal !important;
   text-align: right; padding-right:2em;
   color: var(--text-muted);
-  font-weight:200; font-style: italic;position:relative; z-index:2
+  font-weight:200; font-style: italic;position:relative; z-index:2;margin-top: .275em;
 }
 .quote-layout blockquote b{color:white}
+.quote-layout blockquote b:after{content:""; display:block}
 
 .quote-layout cite:before {
   content: "— ";
@@ -901,7 +902,7 @@ svg * {
     font-weight: 500;
     left: 0rem;
   text-shadow:none;
-        top: 2.5rem;
+        top: 3.75rem;
     font-style: normal;
     line-height: 0rem;}
 
@@ -1064,8 +1065,8 @@ article h2:before {
   top: 1em;
   width: 100%;
   opacity: .6;
-  background-image: conic-gradient(from 90deg at 10% 50%, var(--chart-color-2), var(--bg-grad-1)), conic-gradient(from 270deg at 90% 50%, var(--bg-grad-1), var(--chart-color-2));
-  -webkit-mask-image: radial-gradient(white 5%, transparent 70%);
+  background-image: 
+    conic-gradient(from 90deg at 10% 50%, var(--chart-color-2), var(--bg-grad-1)), conic-gradient(from 270deg at 90% 50%, var(--bg-grad-1), var(--chart-color-2));  -webkit-mask-image: radial-gradient(white 5%, transparent 70%);
   background-position: 1% 0%, 99% 0%;
   background-size: 50% 100%, 50% 100%;
   background-repeat: no-repeat;
@@ -1490,7 +1491,7 @@ details>div {
 .grid-3-layout.custom .quote-layout{box-shadow: none; margin:0;}
 
  .grid-3-layout.custom .quote-layout blockquote{padding-left:3em;}
- .grid-3-layout.custom .quote-layout blockquote:before{font-size:2em;left:1rem; top:.5em}
+ .grid-3-layout.custom .quote-layout blockquote:before{font-size:2em;left:1rem; top:.65em}
 
 .grid-3-layout.custom .quote-layout blockquote:after{ content:""}
 .grid-3-layout.custom .quote-layout blockquote:after{ content:""}
@@ -1624,38 +1625,92 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 }
 
+@media (max-height:600px) {
+  .jump-to a {
+    padding: .5rem 1em !important;
+  }
 
-
-@media (max-height:600px){
-   .jump-to a { padding: .5rem 1em !important;}
-   .jump-to{top: 2em;}
+  .jump-to {
+    top: 2em;
+  }
 
 }
 
 .jump-to,
-.toc-container{background-color:transparent !important; box-shadow:none !important;}
+.toc-container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
-.jump-to ul{transition:background-color .5s ease; border-radius: 2em 0 0 2em;  }
-.toc-container ul, .toc-container li{margin:0; padding:0; list-style:none;}
+.jump-to ul {
+  transition: background-color .5s ease;
+  border-radius: 2em 0 0 2em;
+}
 
-.jump-to a{display:block; vertical-align:middle; padding:1em; color:var(--color-pine-6)}
-.jump-to a.active{margin:0;display: block;}
-.toc-container a:before{content:""; box-shadow: inset 0 .1rem .1rem #fff5, 0 .2rem 1rem #071f1b99;display:inline-block; background-color: #6ea18b55; width:.6em; height:.6em; border-radius:50%; margin:0 1em; margin-right:1em; transition: all .3s ease;}
+.toc-container ul,
+.toc-container li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jump-to a {
+  display: block;
+  vertical-align: middle;
+  padding: 1em;
+  color: var(--color-pine-6)
+}
+
+.jump-to a.active {
+  margin: 0;
+  display: block;
+}
+
+.toc-container a:before {
+  content: "";
+  box-shadow: inset 0 .1rem #a1ef8b22, 0 .2rem 1rem #071f1b99;
+  display: inline-block;
+  background-color: #6ea18b55;
+  width: .6em;
+  height: .6em;
+  border-radius: 50%;
+  margin: 0 1em;
+  margin-right: 1em;
+  transition: all .3s ease;
+}
 
 
 
 
-.jump-to a.active:hover,.jump-to a.active{color:white; background-color:var(--bg-grad-2); box-shadow: inset 0 .1rem #a1ef8b22, 0 .2rem 1rem #071f1b99;}
+.jump-to a.active:hover,
+.jump-to a.active {
+  color: white;
+  background-color: var(--bg-grad-2);
+  box-shadow: inset 0 .1rem #a1ef8b22, 0 .2rem 1rem #071f1b99;
+}
 
-.jump-to a:hover{ box-shadow:   0 .2rem 1rem #071f1b99;}
-.jump-to a:hover:before{background-color: #6ea18b; }
-.jump-to a.active:before{background-color: white; transform:scale(2)}
+.jump-to a:hover {
+  box-shadow: 0 .2rem 1rem #071f1b99;
+}
 
-.jump-to:hover ul{background-color: #071f1bff;  box-shadow: inset 0 .1rem .1rem #fff5, 0 .2rem 1rem #071f1b99;  }
+.jump-to a:hover:before {
+  background-color: #6ea18b;
+}
+
+.jump-to a.active:before {
+  background-color: white;
+  transform: scale(2)
+}
+
+.jump-to:hover ul {
+  background-color: #071f1bff;
+  box-shadow: inset 0 .1rem #a1ef8b22, 0 .2rem 1rem #071f1b99;
+}
 
 
-.jump-to a{border-radius: 2em 0 0 2em} 
-
+.jump-to a {
+  border-radius: 2em 0 0 2em
+}
 
 [name="demographic"] {
   opacity: 0;
@@ -1682,9 +1737,10 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   padding: .3em 1.25em .3em .7em;
   font-weight: 500;
 
+}.reason-list ul {
+  text-align: center;
 }
 
-.reason-list ul{text-align:center;}
 .reason-list li:before {
   content: '\2192';
   padding-right: .5em;
@@ -1692,34 +1748,56 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   font-weight: 400
 }
 
-.reason-list ol li:before{
+.reason-list ol li:before {
   counter-increment: ol;
-  color: var(--bg-base); font-weight:800; font-size:2em; width: 1.5em; text-align:center;
-  padding-right:.2em;
-  content: counter(ol)  ; display:inline-block; vertical-align: middle;
+  color: var(--bg-base);
+  font-weight: 800;
+  font-size: 2em;
+  width: 1.5em;
+  text-align: center;
+  padding-right: .2em;
+  content: counter(ol);
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.reason-list ol li{  padding: .6em 1.25em .6em .7em; background-color: var(--color-jungle-4); color:var(--bg-grad-1);float:left; clear:left;
-  border-radius: 2em; padding: 0em 1.25em 0 .7em;
+.reason-list ol li {
+  padding: .6em 1.25em .6em .7em;
+  background-color: var(--color-jungle-4);
+  color: var(--bg-grad-1);
+  float: left;
+  clear: left;
+  border-radius: 2em;
+  padding: 0em 1.25em 0 .7em;
   box-shadow: inset 0 .1rem #fff5, 0 .1em .2em var(--bg-grad-1);
   text-shadow: 0 .1rem .1rem var(--color-jungle-5)
 }
 
 
-.reason-list.compact ol li{ }
+.reason-list.compact ol li {}
 
-.role-count p{line-height:1em;}
+.role-count p {
+  line-height: 1em;
+}
+
 .role-count b {
-  display: block;margin-bottom:.5rem;
+  display: block;
+  margin-bottom: .5rem;
   font-size: 3rem;
 }
 
 .role-count {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   text-align: left;
   padding-left: 1em;
-   display:grid; 
-           grid-template-columns: 1fr 1fr 1fr}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.role-count small {
+  display: block;
+}
+
 .role-count small span {
   font-weight: 500;
   font-size: 1rem;
@@ -1728,99 +1806,203 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   display: inline-block;
   border-radius: 1em;
   padding: 0 .75em;
-  line-height: 1.75em;margin-top: .5rem;
+  line-height: 1.75em;
+  margin-top: .5rem;
 }
 
 .role-count p:nth-child(1) small span {
   background-color: var(--primary-color)
 }
-.role-count p:nth-child(1) b{color:var(--primary-color)}
+
+.role-count p:nth-child(1) b {
+  color: var(--primary-color)
+}
 
 
 .role-count p:nth-child(2) small span {
   background-color: #a1ef8b;
 }
-.role-count p:nth-child(2) b{color:#a1ef8b}
+
+.role-count p:nth-child(2) b {
+  color: #a1ef8b
+}
 
 
 .role-count p:nth-child(3) small span {
   background-color: #279963;
 }
 
-.role-count p:nth-child(3) b{color: #279963;}
+.role-count p:nth-child(3) b {
+  color: #279963;
+}
 
 #cybersecurity h3,
-#audience h3{font-family: "SUSE Mono"; font-weight: 400; background-color:var(--bg-base); margin: 2em; padding:.2em 1em; border-radius: 2em; font-size: 1.3rem; display:inline-block; margin-bottom: 1em;}
-#cybersecurity h3{}
+#audience h3 {
+  font-family: "SUSE Mono";
+  font-weight: 400;
+  background-color: var(--bg-base);
+  margin: 2em;
+  padding: .2em 1em;
+  border-radius: 2em;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-bottom: 1em;
+}
 
-#audience{user-select:none;}
+#cybersecurity h3 {}
 
-
-#audience details summary:after{  content: "? "; color: var(--bg-grad-1); font-weight:500; text-shadow: 0 .1rem #fff2;
-                               background-color: var(--color-pine-2);display:inline-block; width:1.5em; height:1.5em; line-height:1.5em; border-radius: 50%; box-shadow: 0 .1em .2em var(--bg-grad-3)}
-#audience details[open] summary:after{  content: "\2191";color: var(--color-pine-3); background-color: var(--color-pine-1)}
-
-#audience details{padding: 1em 0}
-
-
-#audience details:not([open]) summary:hover:after{background-color:var(--color-persimmon)}
-
-
-
-#key-findings .grid-4-layout b{color:white;}
-
-#key-findings a{ color: var(--text-muted); font-weight: 400;  background-color: var(--color-pine-1); font-size: .8em;); padding: .2em 1em; border-radius: 1em;}
+#audience {
+  user-select: none;
+}
 
 
+#audience details summary:after {
+  content: "? ";
+  color: var(--bg-grad-1);
+  font-weight: 500;
+  text-shadow: 0 .1rem #fff2;
+  background-color: var(--color-pine-2);
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 50%;
+  box-shadow: 0 .1em .2em var(--bg-grad-3)
+}
+
+#audience details[open] summary:after {
+  content: "\2191";
+  color: var(--color-pine-3);
+  background-color: var(--color-pine-1)
+}
+
+#audience details {
+  padding: 1em 0
+}
 
 
-#key-findings .text-content{position:relative;}
-
-
-#key-findings .text-content{min-height: 15em}
-#key-findings a{position:absolute; bottom:-1em;}
-
+#audience details:not([open]) summary:hover:after {
+  background-color: var(--color-persimmon)
+}
 
 
 
-#cybersecurityChart{height:20em}
-#cybersecurity .grid-3-layout{text-align: center;}
+#key-findings .grid-4-layout b {
+  color: white;
+}
 
-.five-up{gap:3em;   color: var(--text-muted);}
-
-article h2{padding-bottom:4rem;}
-
-
-
-#regional ul{font-size: 1rem; list-style:none; text-align:left;}
-#regional li{margin-bottom:1.5rem; color:var(--text-muted); font-size: 1.25rem !important;
-    line-height: 1.3em;}
-
-#regional li b{color:white}
-
-figure{margin-bottom:2em;}
-figcaption{position:absolute; bottom:-4rem; width:100%;  text-align:center; font-size: .8rem; color:var(--text-muted)}
+#key-findings a {
+  color: var(--text-muted);
+  font-weight: 400;
+  background-color: var(--color-pine-1);
+  font-size: .8em;
+  );
+  padding: .2em 1em;
+  border-radius: 1em;
+}
 
 
-#audience h2{margin:0; padding:0; background-image:none; margin-top:1em !important;
 
-    font-size: 2rem;
-    color: var(--color-jungle-3);
-    font-weight: 400;
-     
-    
-    line-height: 1em;
 
-    margin-bottom: 1em;
-    font-family: 'SUSE Mono'; border-radius:2em;
+#key-findings .text-content {
+  position: relative;
+}
+
+
+#key-findings .text-content {
+  min-height: 15em
+}
+
+#key-findings a {
+  position: absolute;
+  bottom: -1em;
+}
+
+
+
+
+#cybersecurityChart {
+  height: 20em
+}
+
+#cybersecurity .grid-3-layout {
+  text-align: center;
+}
+
+.five-up {
+  gap: 3em;
+  color: var(--text-muted);
+}
+
+article h2 {
+  padding-bottom: 4rem;
+}
+
+
+
+#regional ul {
+  font-size: 1rem;
+  list-style: none;
+  text-align: left;
+}
+
+#regional li {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  font-size: 1.25rem !important;
+  line-height: 1.3em;
+}
+
+#regional li b {
+  color: white
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+figcaption {
+  position: absolute;
+  bottom: -4rem;
+  width: 100%;
+  text-align: center;
+  font-size: .8rem;
+  color: var(--text-muted)
+}
+
+
+#audience h2 {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  margin-top: 1em !important;
+
+  font-size: 2rem;
+  color: var(--color-jungle-3);
+  font-weight: 400;
+
+
+  line-height: 1em;
+
+  margin-bottom: 1em;
+  font-family: 'SUSE Mono';
+  border-radius: 2em;
   text-shadow: none;
-    display: inline-block;
-    padding: .5em 1em;
-   
-    width: auto; margin:1em auto;}
-#audience h2:before, #audience  h2:after{display:none}
+  display: inline-block;
+  padding: .5em 1em;
+
+  width: auto;
+  margin: 1em auto;
+}
+
+#audience h2:before,
+#audience h2:after {
+  display: none
+}
 
 
-#key-findings h3 .count-up.percent:after, 
-#key-findings h3 .count-up.percent{color:white;
-    -webkit-text-fill-color: #a1ef8bcc;}
+#key-findings h3 .count-up.percent:after,
+#key-findings h3 .count-up.percent {
+  color: white;
+  -webkit-text-fill-color: #a1ef8bcc;
+}
