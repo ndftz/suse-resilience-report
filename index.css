@@ -832,12 +832,12 @@ svg * {
 
 @media (max-width: 900px) {
 
-   #regional h4{text-align: center;}
-     #regional div{display: grid;
+   #countries h4{text-align: center;}
+     #countries div{display: grid;
     grid-template-columns: 1fr !important;}
 
 
- #regional  ul{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2rem;;}
+ #countries  ul{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2rem;;}
 
 
   }
@@ -848,7 +848,7 @@ svg * {
   }
 }
 @media (max-width: 600px) {
- #regional  ul{
+ #countries  ul{
   grid-template-columns: 1fr 1fr; 
 }
 }
@@ -1962,20 +1962,20 @@ article h2 {
 
 
 
-#regional ul {
+#countries ul {
   font-size: 1rem;
   list-style: none;
   text-align: left;
 }
 
-#regional li {
+#countries li {
   margin-bottom: 1.5rem;
   color: var(--text-muted);
   font-size: 1.25rem !important;
   line-height: 1.3em;
 }
 
-#regional li b {
+#countries li b {
   color: white
 }
 
