@@ -481,7 +481,7 @@ justify-content: stretch !important;
 /*all copy fonts light*/
 article p {
   font-weight: 400;
-  line-height:1.3em
+  line-height:1.5em
 }
 
 /* Responsive */
@@ -887,11 +887,10 @@ svg * {
   font-weight:200; font-style: italic;position:relative; z-index:2;margin-top: .275em;
 }
 .quote-layout blockquote b{color:white}
-.quote-layout blockquote b:after{content:""; display:block}
+/*.quote-layout blockquote b:after{content:""; display:block}*/
 
 .quote-layout cite:before {
   content: "— ";
- 
   color: var(--color-jungle-3); 
 }
 
@@ -1932,7 +1931,8 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 
 #key-findings .text-content {
-  min-height: 15em
+  min-height: 15em;
+  color: var(--color-jungle-7);
 }
 
 #key-findings a {
@@ -2028,4 +2028,13 @@ figcaption {
   color: white;
   -webkit-text-fill-color: #a1ef8bcc;
       -webkit-text-stroke: .1rem #a1ef8b;
+}
+
+
+
+@media (max-width:500px){
+  .demographics details[open] {
+    max-height:none !important
+  }
+  .role-count{grid-template-columns:1fr !important; text-align:center;}
 }
