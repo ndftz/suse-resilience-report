@@ -171,8 +171,8 @@ body {
 /* Container for content that must stay on top of the background */
 article {
   position: relative;
-  z-index: 1;
-  /* Content above the background canvas */
+  z-index: 1;  /* Content above the background canvas */
+  padding-top: 5em; /*clearing the SUSE nav*/
 }
 
 /* Canvas for Three.js background */
@@ -2038,3 +2038,5 @@ figcaption {
   }
   .role-count{grid-template-columns:1fr !important; text-align:center;}
 }
+
+
