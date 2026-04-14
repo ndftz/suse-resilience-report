@@ -148,8 +148,8 @@
               datalabels: {
                 anchor: 'end',
                 align: 'start',
-                color: [color7, color7, colorDarkFog, colorMediumFog, colorMediumFog, colorMediumFog],
-                offset: [10, 10, 0, -40, -40, -40],
+                color: [color7, color7, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog],
+                offset: [10, 10, -40, -40, -40, -40],
                 font: {
                   weight: '600',
                   size: 20
