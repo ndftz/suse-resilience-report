@@ -532,7 +532,7 @@
             labels: ['Very', 'Confident', 'Somewhat', 'None'],
             datasets: [{
               data: [63, 30, 4, 3],
-              backgroundColor: [color2, primaryColor, color4, colorDarkFog],
+              backgroundColor: [color2, primaryColor, '#6ea18b', colorDarkFog],
               
               borderWidth: 0,
                   borderRadius: 0,
@@ -550,7 +550,7 @@
             },
             plugins: {
               legend: {
-                position: 'bottom',
+                position: 'none',
                 labels: {
                   usePointStyle: true,
                   pointStyle: 'circle',
@@ -577,7 +577,7 @@
             labels: ['Very', 'Confident', 'Somewhat', 'None'],
             datasets: [{
               data: [37, 45, 13, 5],
-              backgroundColor: [color2, primaryColor, color4, colorDarkFog],
+              backgroundColor: [color2, primaryColor, '#6ea18b', colorDarkFog],
               
               borderWidth: 0,
                   borderRadius: 0,
@@ -595,7 +595,7 @@
             },
             plugins: {
               legend: {
-                position: 'bottom',
+                position: 'none',
 
                 labels: {
                   usePointStyle: true,

@@ -1334,13 +1334,15 @@ summary {
   font-weight: 300;
 }
 /* legend colors from charts */
+
+.legend p{margin:0; display:inline-block; font-size: .8em }
 .sw {
   display: inline-block;
   width: 1em;
   height: 1em;
   background-color: var(--color-jungle);
-  margin-right: 1rem;
-  border-radius: 50%
+  margin-right: .5rem; margin-left: 1em;
+  border-radius: 50%;
 }
 
 .sw-1 {
@@ -1348,13 +1350,13 @@ summary {
 }
 
 .sw-2 {
-  background-color: var(--color-jungle)
+  background-color: var(--color-jungle-5)
 }
 
 .sw-3 {
   background-color: #6ea18b
 }
-
+.sw-4{background-color:#2b564b}
 
 details>div {
   z-index: 9;
@@ -2089,3 +2091,4 @@ opacity:1; font-size: 1.3rem;
 
 .show-cap.warn:before{ display:block; content:"\2191"; position:absolute; left:1em; color:var(--color-persimmon-6); font-size: 2em;
 }
+
