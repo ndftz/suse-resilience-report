@@ -105,6 +105,7 @@
      src: url('fonts/SUSE[wght].ttf') format('truetype');
      font-weight: 100 900;
      font-style: normal;
+     font-display: swap;
    }
 
    @font-face {
@@ -112,6 +113,7 @@
      src: url('fonts/SUSE-Italic[wght].ttf') format('truetype');
      font-weight: 100 900;
      font-style: italic;
+     font-display: swap;
    }
 
    @font-face {
@@ -119,6 +121,7 @@
      src: url('fonts/SUSEMono[wght].ttf') format('truetype');
      font-weight: 100 800;
      font-style: normal;
+     font-display: swap;
    }
 
    @font-face {
@@ -126,6 +129,7 @@
      src: url('fonts/SUSEMono-Italic[wght].ttf') format('truetype');
      font-weight: 100 800;
      font-style: italic;
+     font-display: swap;
    }
 
 
@@ -186,9 +190,9 @@ section a{color: var(--color-persimmon-6)}
   width: 100%;
   height: 100vh;
   z-index: 0;
-  mix-blend-mode: difference;
+  mix-blend-mode: multiply;
   pointer-events: none;
-  opacity: .2;
+  opacity: .5;
   pointer-events: none;
  }
 

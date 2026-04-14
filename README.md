@@ -1,8 +1,10 @@
 # suse-resilience-report
 
-Landing page for research report: **“Navigating Digital Resilience”** April 2026
+Landing page for research report: **[“Navigating Digital Resilience”](https://suse.com/navigating-digital-resilience-2026 )** April 2026
 
-This page uses the following:
+
+
+This page uses the following outstanding resources:
 * [SUSE Font](https://github.com/SUSE/suse-font)
 * [ChartJS](https://github.com/chartjs/Chart.js)
 * [ThreeJS](https://github.com/mrdoob/three.js/)
