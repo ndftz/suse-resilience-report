@@ -529,7 +529,7 @@
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Very', 'Confident', 'Somewhat', 'None'],
+            labels: ['Very', 'Confident', 'Somewhat', 'Not Confident'],
             datasets: [{
               data: [63, 30, 4, 3],
               backgroundColor: [color2, primaryColor, '#6ea18b', colorDarkFog],
@@ -574,7 +574,7 @@
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Very', 'Confident', 'Somewhat', 'None'],
+            labels: ['Very', 'Confident', 'Somewhat', 'Not Confident'],
             datasets: [{
               data: [37, 45, 13, 5],
               backgroundColor: [color2, primaryColor, '#6ea18b', colorDarkFog],

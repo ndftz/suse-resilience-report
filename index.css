@@ -873,7 +873,7 @@ svg * {
 .quote-layout cite {
   font-style: normal !important;
   text-align: right; padding-right:2em;
-  color: var(--text-muted);
+  color: var(--text-muted);order:2;
   font-weight:200; font-style: italic;position:relative; z-index:2;margin-top: .275em;
 }
 .quote-layout blockquote b{color:white}
