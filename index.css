@@ -1561,6 +1561,7 @@ article blockquote b {
 
 .classification{font-size:1rem !important; color:var(--text-muted)}
 .classification b{display:inline-block;font-size: 2rem; color:var(--color-jungle);vertical-align: middle;}
+
 .classification span{display:inline-block;  margin:1rem 0; background-color:var(--color-jungle-1); padding:.5rem 1rem;  color:var(--text-muted); 
 box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   border-radius: 1.75rem;
@@ -1887,6 +1888,8 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   color: white;
 }
 
+
+
 #key-findings a {
   color: var(--text-muted);
   font-weight: 400;
@@ -1895,9 +1898,10 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   
   padding: .2em 1em;
   border-radius: 1em;
-    box-shadow: inset 0 .1rem var(--color-jungle-2), 0 .1rem 1rem var(--bg-grad-2);
-}
 
+}
+#key-findings a ,
+.classification span{    box-shadow: inset 0 .1rem var(--color-jungle-2), 0 .1rem 1rem var(--bg-grad-2);}
 
 #key-findings a:before{content:"\2193"; color: var(--color-persimmon-5); margin-right:.5em;}
 
