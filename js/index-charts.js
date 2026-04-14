@@ -177,6 +177,63 @@
           }
         });
       }
+      if (chartId === 'openSourceImportanceChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Extremely', 'Very', 'Moderately', 'Slightly', 'Not at all', "Don't know"],
+            datasets: [{
+              label: 'Importance to digital resilience',
+              data: [41, 53, 6, 0, 0, 0],
+              backgroundColor: [primaryColor, primaryColor, colorDarkFog, colorDarkFog, colorDarkFog, colorDarkFog],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
+            },
+            plugins: {
+              legend: {
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'start',
+                color: [color3, color3, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog],
+                offset: [10, 10, 0, -40, -40, -40],
+                font: {
+                  weight: '600',
+                  size: 20
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+                ticks: {
+                  color: primaryColor,
+                  font: {
+                    size: 14
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
       if (chartId === 'digitalSovereigntyChart') {
         new Chart(ctx, {
           type: 'bar',
@@ -276,16 +333,15 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Breached', 'Not Breached'],
+            labels: ['Yes,\nMajor ', 'Yes,\nMinor ', 'No', 'Unsure'],
             datasets: [{
-              label: 'Percentage',
-              data: [51, 49],
-              backgroundColor: [primaryColor, color3],
+              label: 'Foreign entity breaches',
+              data: [23, 28, 44, 5],
+              backgroundColor: [primaryColor, primaryColor, colorDarkFog, colorDarkFog],
               borderRadius: 6
             }]
           },
           options: {
-            indexAxis: 'y',
             responsive: true,
             maintainAspectRatio: false,
             animation: {
@@ -300,24 +356,24 @@
               datalabels: {
                 anchor: 'end',
                 align: 'end',
-                color: [ color7, colorMediumFog],
-                offset: -80,
+                offset: [10, 10, -50, 0, 0, 0],
+                color: [color6, color6, colorMediumFog, colorDarkFog],
                 font: {
                   weight: '800',
-                  size: 25
+                  size: 22
                 },
                 formatter: (value) => value + '%'
               }
             },
             scales: {
               x: {
-                display: false,
-                beginAtZero: true,
                 grid: {
                   display: false
                 }
               },
               y: {
+                display: false,
+                beginAtZero: true,
                 grid: {
                   display: false
                 }
@@ -648,11 +704,11 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Yes, in place', 'Developing', 'Needed'],
+            labels: ['Developing', 'In place', 'Need one', 'Not priority'],
             datasets: [{
-              label: 'Percentage',
-              data: [67, 42, 8],
-              backgroundColor: [primaryColor, color2, color4],
+              label: 'Formal strategy for digital sovereignty',
+              data: [50, 43, 6, 1],
+              backgroundColor: [primaryColor, primaryColor, colorMediumFog, colorDarkFog],
               borderRadius: 6
             }]
           },
@@ -671,8 +727,8 @@
               datalabels: {
                 anchor: 'end',
                 align: 'top',
-                color: '#071f1b',
-                offset: -40,
+                color: ['#071f1b','#071f1b', colorMediumFog, colorMediumFog],
+                offset: [-40, -40, 10, 10],
                 font: {
                   weight: '600',
                   size: 20
