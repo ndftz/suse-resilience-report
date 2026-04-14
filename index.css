@@ -145,7 +145,7 @@
 
 /* OTT vingette */ 
 body:before{content:""; 
-width: 100vw;height:100vh; position:fixed; top:0; bottom:0; right:0; left:0; 
+width: 100vw;height:100vh; position:fixed; top:0; bottom:-10em; right:0; left:0; 
 pointer-events:none;
 background: radial-gradient(transparent, transparent, #00110eaa);
 background-size: cover;
