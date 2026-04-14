@@ -459,9 +459,16 @@ justify-content: stretch !important;
 /*all copy fonts light*/
 article p {
   font-weight: 400;
-  line-height:1.5em
+  line-height:1.5em;
+  color:#fffc;
 }
 
+article i,
+article strong,
+article b{color:white; text-shadow: 0 .1rem .1rem #0005 }
+
+
+article b, article strong{font-weight:500}
 /* Responsive */
 
 @media (min-width: 900px) {
@@ -1038,7 +1045,13 @@ article h2 {
 article .subtitle {
   text-align: center;
       color: var(--color-jungle-7);
-    text-shadow: 0 .1rem .2rem var(--color-pine-1);
+    text-shadow: 0 .15rem .2rem var(--color-pine-1);
+    margin-bottom:6rem;
+ 
+    font-size: 1.5em;
+ 
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 article h2:before {
@@ -1335,7 +1348,7 @@ summary {
 }
 /* legend colors from charts */
 
-.legend p{margin:0; display:inline-block; font-size: .8em }
+.legend p{margin:0; display:inline-block; font-size: .9em; color:var(--text-muted) }
 .sw {
   display: inline-block;
   width: 1em;
@@ -2045,30 +2058,32 @@ opacity:1; font-size: 1.3rem;
 
 
 
-.inside-open{width:100%; position: absolute; top:9em; text-align:right;}
-@media (max-width: 700px){.inside-open{    position: relative;
+.inside-open{width:100%; position: absolute; top:10em; text-align:right;}
+
+.inside-open .count-up{line-height:.5em; !important}
+@media (max-width: 800px){.inside-open{    position: relative;
     top: 0;
     text-align: center;}}
 
 
 .combined-stat{background-color: var(--color-jungle-4); margin-top:0em;
-              
+              font-size: .9em;
               display:inline-block; padding: .2em 1em; border-radius:1em; color:var(--bg-base)
               }
 
-
-#summary .spot-icon{height:5em; margin-bottom:1em; width:100%;
+.combined-stat b{color:var(--bg-base);}
+#summary .spot-icon{height:5em; margin-bottom:1em; 
 
 
 }
 
-#summary h4{text-align:center;}
+#summary h4{}
 
 
 #summary .quote-layout,
 #summary .five-up{margin:3em 0;}
 
-.subtitle{margin-bottom:6em;}
+
 
 
 
