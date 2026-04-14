@@ -142,6 +142,17 @@
 
    }
 
+
+/* OTT vingette */ 
+body:before{content:""; 
+width: 100vw;height:100vh; position:fixed; top:0; bottom:0; right:0; left:0; 
+pointer-events:none;
+background: radial-gradient(transparent, transparent, #00110eaa);
+background-size: cover;
+background-position: 50% 50%;
+}
+
+
    body {
      background-color: #071f1b;
    }
@@ -1190,6 +1201,7 @@ summary {
   border-radius: 1.5em;
   position: absolute;
   top: 0.2em;
+  text-shadow:none;
   font-family: "SUSE Mono", SUSE;
   left: 0.2em;
   padding: 0 1em 0 1em;
@@ -2106,4 +2118,6 @@ opacity:1; font-size: 1.3rem;
 
 .show-cap.warn:before{ display:block; content:"\2191"; position:absolute; left:1em; color:var(--color-persimmon-6); font-size: 2em;
 }
+
+
 
