@@ -490,7 +490,11 @@ article p {
   .grid-5-layout>div {
     display: grid;
     grid-template-columns: 1fr 10em 3fr;
-    place-items: anchor-center;
+    align-items: start;
+  }
+
+  .grid-5-layout>div>ul {
+    grid-column: 1 / -1;
   }
 
   .grid-5-layout h4 {
@@ -1442,9 +1446,11 @@ details>div {
 
 }
 
+
 .grid-5-layout .flag{   border-radius: 1em;font-size: 2em;  font-size: clamp(1rem, 2vw, 2rem);width: 8em;
   height: 6em;margin: 1em 0;}
 
+  
 .grid-3-layout {
   display: grid;
   gap: .5rem;
@@ -1452,7 +1458,7 @@ details>div {
   grid-template-columns: repeat(3, 1fr);
 
   line-height: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .grid-3-layout.custom{

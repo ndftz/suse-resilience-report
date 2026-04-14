@@ -166,10 +166,10 @@
                   display: false
                 },
                 ticks: {
-                  color: [colorWhite,colorWhite,colorMediumFog,colorMediumFog,colorMediumFog,colorMediumFog, ],
+                  color: [color6,color6,colorMediumFog,colorMediumFog,colorMediumFog,colorMediumFog, ],
                   
                   font: {
-                    size: 14
+                    size: [20, 20, 15,13,13,13]
                   }
                 }
               }
@@ -238,9 +238,9 @@
                   display: false
                 },
                 ticks: {
-                   color:[colorWhite, colorWhite, colorWhite, colorMediumFog,  colorMediumFog,colorWhite, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog ],
+                   color:[colorWhite, color6, color6, colorMediumFog,  colorMediumFog,color6, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog ],
                   font: {
-                    size: 12
+                    size: [13, 13, 13, 11, 11, 13, 11, 11, 11,11,11, ]
                   }
                 }
               }
@@ -623,7 +623,7 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Developing', 'In place', 'Need one', 'Not priority'],
+            labels: ['Developing', 'Strategy in place', 'Need one', 'Not priority'],
             datasets: [{
               label: 'Formal strategy for digital sovereignty',
               data: [50, 43, 6, 1],
@@ -659,8 +659,9 @@
               x: {
                 display: true,
                 ticks: {
+                  color: [colorWhite,colorWhite,color6, colorMediumFog],
                   font: {
-                    size: 14
+                    size: 16
                   }
                 },
                 grid: {
