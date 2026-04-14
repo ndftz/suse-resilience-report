@@ -1308,11 +1308,11 @@ summary {
   white-space: :nowrap;
   display: inline-block;
   padding: .1em 1em;
-  border-radius: 1em;
+  border-radius: 1.5em;
   text-transform: uppercase;
   font-weight: 300;
   font-family: 'SUSE Mono';
-  color: white;
+  color: var(--color-persimmon-5);
   box-shadow: 0 0 0 .05rem;
   margin: .5em;
   font-size: 1rem;
