@@ -1790,7 +1790,8 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   text-align: left;
   padding-left: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top:1rem;
 }
 
 .role-count small {
