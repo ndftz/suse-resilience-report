@@ -185,7 +185,7 @@
             datasets: [{
               label: 'Importance to digital resilience',
               data: [41, 53, 6, 0, 0, 0],
-              backgroundColor: [primaryColor, primaryColor, colorDarkFog, colorDarkFog, colorDarkFog, colorDarkFog],
+              backgroundColor: [primaryColor, primaryColor, colorMediumFog, colorDarkFog, colorDarkFog, colorDarkFog],
               borderRadius: 6
             }]
           },
@@ -206,7 +206,7 @@
               datalabels: {
                 anchor: 'end',
                 align: 'start',
-                color: [color3, color3, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog],
+                color: [color7, color7, colorDarkFog, colorMediumFog, colorMediumFog, colorMediumFog],
                 offset: [10, 10, 0, -40, -40, -40],
                 font: {
                   weight: '600',
@@ -224,7 +224,8 @@
                   display: false
                 },
                 ticks: {
-                  color: primaryColor,
+                  color: [colorWhite,colorWhite,colorMediumFog,colorMediumFog,colorMediumFog,colorMediumFog, ],
+                  
                   font: {
                     size: 14
                   }

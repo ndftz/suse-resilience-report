@@ -1700,7 +1700,7 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
   pointer-events: none
 }
 
-.spot-icon{height:6em; margin-bottom:2em;}
+.spot-icon{height:6em;   filter: drop-shadow(.0em .05em 1em #0005) drop-shadow(0rem .25rem .12em #0004);}
 
 
 .reason-list ol ,
@@ -1767,7 +1767,7 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
     padding: .5em 1.25em .5em .7em;
     font-weight: 500;
     border-radius: 2em;clear: left;
-    float: left;}
+    }
 .reason-list.hot li:before{color:var(--color-persimmon-3)}
 
 .reason-list.compact ol li {}
@@ -2038,7 +2038,7 @@ opacity:1; font-size: 1.3rem;
 
 #summary .spot-icon{height:5em; margin-bottom:1em; width:100%;
 
-  filter: drop-shadow(.0em .05em 1em #0005) drop-shadow(0rem .25rem .12em #0004);
+
 }
 
 #summary h4{text-align:center;}
