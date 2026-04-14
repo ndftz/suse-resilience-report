@@ -235,6 +235,77 @@
           }
         });
       }
+      if (chartId === 'extraBudgetChart') {
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [
+              'Implementing AI',
+              'Data security\n& compliance',
+              'Digital Resilience',
+              'Cloud Migration',
+              'Investing in\nopen source',
+              'Sovereignty\nInitiatives',
+              'Reliability &\nAvailability',
+              'User Experience',
+              'Skills Gaps',
+              'Reducing lock-in'
+            ],
+            datasets: [{
+              label: 'Extra Budget Spending',
+              data: [70, 54, 46, 45, 39, 38, 36, 36, 34, 20],
+              backgroundColor: [
+                colorWhite, color5, color5, color3,
+                color3, color5, color3, color3, color3,
+                color3
+              ],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart',
+              delay: (context) => context.dataIndex * 100
+            },
+            plugins: {
+              legend: {
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'start',
+                color: [color3, color3, color3, colorMediumFog, colorMediumFog, color3, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog],
+                offset: 10,
+                font: {
+                  weight: '600',
+                  size: 18
+                },
+                formatter: (value) => value + '%'
+              }
+            },
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+                ticks: {
+                   
+                  font: {
+                    size: 12
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
       if (chartId === 'digitalSovereigntyChart') {
         new Chart(ctx, {
           type: 'bar',
