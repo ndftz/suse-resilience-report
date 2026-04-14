@@ -2063,3 +2063,19 @@ opacity:1; font-size: 1.3rem;
 #countries .classification i,
 #countries ul{display:none}
 
+.show-cap.warn{
+      background-color: var(--color-persimmon-2);
+    border-radius: .3em .3em 1em 1em;
+    color: white;
+    padding: .5em 1em;
+    position:relative;
+    box-shadow: inset 0 .1rem 0  #fff3, 0 .2rem .3rem var(--bg-grad-3);
+     color:var(--color-persimmon-8);
+    margin-top: -4em;
+    margin-bottom: 4em;
+}
+.show-cap.warn b{color:white}
+
+
+.show-cap.warn:before{ display:block; content:"\2191"; position:absolute; left:1em; color:var(--color-persimmon-6); font-size: 2em;
+}
