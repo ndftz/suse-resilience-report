@@ -2031,7 +2031,9 @@ opacity:1; font-size: 1.3rem;
 
 
 .inside-open{width:100%; position: absolute; top:9em; text-align:right;}
-
+@media (max-width: 500px){.inside-open{    position: relative;
+    top: 0;
+    text-align: center;}}
 
 
 .combined-stat{background-color: var(--color-jungle-4); margin-top:0em;
