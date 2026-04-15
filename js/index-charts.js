@@ -191,7 +191,7 @@
               'Reliability &\nAvailability',
               'User Experience',
               'Skills Gaps',
-              'Reducing lock-in'
+   
             ],
             datasets: [{
               label: 'Extra Budget Spending',
