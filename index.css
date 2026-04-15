@@ -151,7 +151,7 @@
 body:before{content:""; 
 width: 100vw;height:100vh; position:fixed; top:0; bottom:-10em; right:0; left:0; 
 pointer-events:none;
-background: radial-gradient(transparent, transparent, #00110eaa);
+background: radial-gradient(transparent, #00110e11, #00110e99);
 background-size: cover;
 background-position: 50% 50%;
 }
