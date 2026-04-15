@@ -1062,7 +1062,7 @@ article .subtitle {
       color: var(--color-jungle-7);
     text-shadow: 0 .15rem .2rem var(--color-pine-1);
     margin-bottom:6rem;
- 
+    font-weight:315;
     font-size: 1.5em;
  
     margin-left: 2em;
