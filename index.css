@@ -572,7 +572,8 @@ article b, article strong{font-weight:500}
     grid-template-rows: 1fr ;}
 
 
-
+    .reason-list ol {text-align: center;}
+.reason-list ol li{float:none !important; clear:none;     margin: 0.25rem auto; }
 
 
 } /* end mobile */
