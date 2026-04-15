@@ -105,6 +105,7 @@
                 align: 'start',
                 offset: 20,
                 font: {
+                  lineHeight: 1,
                   weight: 'bold',
                   
                   size: 20
