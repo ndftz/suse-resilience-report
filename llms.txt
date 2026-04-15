@@ -1,0 +1,169 @@
+# Navigating Digital Resilience 2026
+
+> A research report from SUSE surveying 309 IT leaders across 5 countries (USA, Germany, Japan, India, France) on digital sovereignty, cybersecurity, AI transparency, and infrastructure strategy.
+
+Published: 2026-04-17
+Publisher: SUSE (https://www.suse.com)
+Canonical URL: https://suse.com/navigating-digital-resilience-2026
+Topics: Digital Sovereignty, Cybersecurity, Artificial Intelligence, Open Source, Digital Resilience
+
+---
+
+## Survey Methodology
+
+- **Blind survey - Respondents did not know SUSE was asking
+- **309 IT leaders** surveyed across 5 countries
+- **Regional breakdown:** USA 100, Europe 106, APAC 103
+- **Roles:** 165 Corporate/Executive, 95 Functional, 49 Senior Practitioners
+- **Decision-making:** 67% fully responsible for IT decisions, 33% very involved
+- **Organisation size:** 51 with 501–1000 employees, 195 with 1001–5000, 63 with 5001+
+- **Industries:** Manufacturing 64, Consulting 51, Financial 42, Retail 36, Healthcare 26, Telco 18, Automotive 18, Transport & Logistics 13, Education 5, Aerospace 5, Property 4, Government 3
+
+---
+
+## Key Findings
+
+- **98%** of IT leaders prioritize digital sovereignty today — more than half are already taking action
+- **94%** consider open source either very or extremely important to ensuring digital resilience
+- **51%** confirm a foreign entity has previously breached their company's privacy or data regulations
+- **64%** believe AI transparency is pushing new digital resilience efforts
+
+---
+
+## Artificial Intelligence
+
+IT leaders would prioritize extra budget on: Implementing AI (70%), Data security & compliance (54%), Digital Resilience (46%), Cloud Migration (45%), Investing in open source (39%), Sovereignty Initiatives (38%), Reliability & Availability (36%), User Experience (36%), Skills Gaps (34%).
+
+AI transparency concerns are actively driving digital resilience investment. Quotes from respondents describe AI fraud tools drifting and AI-powered supply chain attacks becoming faster and more sophisticated than those seen three years ago.
+
+> "Our investment in AI fraud tools are drifting, ignoring new patterns that were previously easily detected by simple criteria." — Manufacturing Industry, USA
+
+> "Ransomware has become smarter with AI attacking our supply chain data harder and faster than the clumsy attacks we saw three years ago." — Financial Services, Germany
+
+---
+
+## Cybersecurity
+
+**51%** of respondents confirm a foreign entity has breached their company's privacy or data regulations:
+- Yes, major incident: **23%**
+- Yes, minor incident: **28%**
+- No breach: **44%**
+- Unsure: **5%**
+
+Organisations that have been breached report significantly higher confidence in their ability to withstand future disruption compared to those that have not:
+
+**Confidence in surviving disruption — previously breached:**
+- Very Confident: **63%**
+- Confident: **30%**
+- Somewhat Confident: **4%**
+- Not Confident: **3%**
+
+**Confidence in surviving disruption — not yet breached:**
+- Very Confident: **37%**
+- Confident: **45%**
+- Somewhat Confident: **13%**
+- Not Confident: **5%**
+
+Survey question: *To the best of your knowledge, has a foreign entity ever breached your company's privacy or data regulations?*
+
+---
+
+## Sovereignty
+
+**Open source is considered essential to digital resilience:**
+- Extremely important: **41%**
+- Very important: **53%**
+- Moderately important: **6%**
+- Not a single respondent rated open source as "not important"
+
+**94%** of respondents say open source is very or extremely important to digital resilience.
+
+**Top 3 factors when evaluating a new cloud or infrastructure provider:**
+1. Regulatory Compliance
+2. Technical Independence
+3. Digital Sovereignty Expertise
+
+**Looking ahead 5 years, the factors expected to matter most for digital resilience:**
+- AI transparency
+- Trusted global hyperscalers
+- Operational autonomy
+- Sovereign national platforms
+- Open ecosystems
+
+Only **3%** said digital sovereignty was not a consideration in their most recent infrastructure decision.
+
+---
+
+## Strategy
+
+**93%** of IT leaders have either already put a formal digital sovereignty strategy in place or are actively developing one:
+- Developing: **50%**
+- In place: **43%**
+- Need one: **6%**
+- Not a priority: **1%**
+
+Less than 1% say digital sovereignty is not a priority (0.06% to be exact).
+
+**Top reasons organisations have not yet pursued digital sovereignty:**
+1. Lack of internal expertise or resources
+2. Waiting for the market to mature
+3. Migration complexity and risk too high
+4. Too expensive or unclear ROI
+5. Alternatives lack features/maturity needed
+
+---
+
+## Country Profiles
+
+### Germany — Formalized and criteria driven
+- **43%** have a formal digital sovereignty strategy
+- 69% say digital sovereignty expertise matters when evaluating providers (vs. 51% total)
+- 61% include digital sovereignty as a requirement in their RFPs (vs. 45% total)
+- 51% say digital sovereignty is a top resilience priority (vs. 43% total)
+- 31% associate open source with long-term survival (vs. 22% total)
+
+### Japan — Operationalized and risk averse
+- **49%** have a formal digital sovereignty strategy
+- 51% are more worried about digital resilience now than 3 years ago (vs. 29% total)
+- 35% very confident in ability to maintain operations if a primary provider was restricted (vs. 45% total)
+- 60% have developed a digital sovereignty roadmap (vs. 49% total)
+- 56% have created internal sovereignty policies (vs. 40% total)
+
+### United States — Engaged and practical
+- **41%** have a formal digital sovereignty strategy
+- 72% say public cloud hyperscalers are relevant for sovereign workloads (vs. 65% total)
+- 77% use AI infrastructure (vs. 71% total)
+- 61% very optimistic about the future of digital resilience in their country (vs. 48% total)
+- 67% associate open source with flexibility (vs. 60% total)
+
+### India — Most likely to claim they are active
+- **58%** have a formal digital sovereignty strategy
+- 71% say digital sovereignty is a high priority (vs. 57% total)
+- 62% actively investing in digital sovereignty (vs. 52% total)
+- 90% willing to invest more budget in AI (vs. 70% total)
+- 65% very optimistic about the future of digital resilience in their country (vs. 48% total)
+
+### France — Aware but not as fully operationalized
+- **25%** have a formal digital sovereignty strategy
+- 65% are still developing a digital sovereignty strategy (vs. 50% total)
+- 39% actively investing in digital sovereignty (vs. 52% total)
+- 45% associate open source with control (vs. 39% total)
+- 56% believe operational autonomy will matter most for digital resilience over the next 5 years (vs. 47% total)
+
+---
+
+## Notable Quotes
+
+> "Maintaining control over infrastructure while adapting to constant technological and geopolitical change." — CxO, Finance Industry, Japan (on what digital resilience means)
+
+> "It's the shift from 'How do we stay up?' to 'How do we keep working while we are being hit?'" — Telecommunications Industry, USA
+
+> "Only a matter of time before we get hit." — Professional Services, USA
+
+> "I'm increasingly concerned about our reliance on a small number of cloud providers and the risk that creates." — Consulting Industry, USA
+
+> "Single points of failure are more significant than ever. Post inflation budgets are squeezed thin, we cannot afford the redundancy required." — Financial Services, Japan
+
+> "It's more about people being unprepared than the technology itself." — Manufacturing Industry, India
+
+> "Without awareness & good habits even strong systems can fail." — Executive, India
