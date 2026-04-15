@@ -151,6 +151,8 @@
    
 }
 
+
+
 /* OTT mobile vingette  */ 
 @media (max-width:512px){
 body:before{content:""; 
@@ -2134,3 +2136,7 @@ opacity:1; font-size: 1.3rem;
 
 
 
+
+
+footer a{font-weight:400; color:var(--color-jungle-5)}
+@media (max-width: 900px) {footer p{text-align:left}}
