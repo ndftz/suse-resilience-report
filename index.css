@@ -2070,10 +2070,10 @@ opacity:1; font-size: 1.3rem;
 
 
 
-.inside-open{width:100%; position: absolute; top:10em; text-align:right;}
+.inside-open{width:100%; position: absolute; top:11em; text-align:right;}
 
 .inside-open .count-up{line-height:.5em; !important}
-@media (max-width: 800px){.inside-open{    position: relative;
+@media (max-width: 900px){.inside-open{    position: relative;
     top: 0;
     text-align: center;}}
 
@@ -2083,7 +2083,7 @@ opacity:1; font-size: 1.3rem;
               display:inline-block; padding: .2em 1em; border-radius:1em; color:var(--bg-base)
               }
 
-.combined-stat b{color:var(--bg-base);}
+.combined-stat b{color:var(--bg-base); text-shadow:none}
 #summary .spot-icon{height:5em; margin-bottom:1em; 
 
 
