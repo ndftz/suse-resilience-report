@@ -735,7 +735,7 @@ svg * {
   width: 100%;
   z-index: 1;
   position: relative;
-  margin-top: -8rem;
+  margin-top: -6rem;
 
 }
 
@@ -831,7 +831,7 @@ svg * {
 
 @media (min-width: 700px) {
   .curious-geeko {
-    max-height: 60vw
+    max-height: 60vw; 
   }
 }
 
@@ -849,7 +849,7 @@ svg * {
 
 @media (min-width: 900px) {
   .curious-geeko {
-    max-height: 20vw
+    max-height: 20vw; 
   }
 }
 @media (max-width: 600px) {
