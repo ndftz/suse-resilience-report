@@ -145,7 +145,11 @@
      box-sizing: border-box;
 
    }
-
+.header.is-fixed{background-color: #0c322c99;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+   
+}
 
 /* OTT mobile vingette  */ 
 @media (max-width:512px){
