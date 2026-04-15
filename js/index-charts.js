@@ -58,7 +58,7 @@
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['USA', 'Europe', 'APAC', ],
+            labels: ['North\nAmerica', 'Europe', 'APAC', ],
             datasets: [{
               label: 'regions',
               data: [100, 106, 103],
@@ -103,11 +103,11 @@
                 
                 clamp: true,
                 align: 'start',
-                offset: 10,
+                offset: 20,
                 font: {
                   weight: 'bold',
                   
-                  size: 26
+                  size: 20
                 },
                 formatter: (value, context) => {
                   const label = context.chart.data.labels[context.dataIndex];
@@ -305,7 +305,7 @@
         new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Corporate', 'Function', 'Practice'],
+            labels: ['Executive\nLead', 'Function\nLead', 'Practice\nLead'],
             datasets: [{
               data: [165, 95, 49],
               backgroundColor: [primaryColor, color2, color4],
@@ -319,7 +319,7 @@
             }]
           },
           options: {
-            rotation: -90,
+            rotation: -85,
             responsive: true,
             maintainAspectRatio: false,
             animation: {
@@ -338,7 +338,9 @@
               },
               datalabels: {
                 color: ['#071f1b', colorDarkFog, color6, ],
+                offset:5,
                 font: {
+                  lineHeight: 1,
                   align: 'center',
                   size:23,
                   weight: '600'
