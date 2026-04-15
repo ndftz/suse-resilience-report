@@ -2,7 +2,7 @@
 
 > A research report from SUSE surveying 309 IT leaders across 5 countries (USA, Germany, Japan, India, France) on digital sovereignty, cybersecurity, AI transparency, and infrastructure strategy.
 
-Published: 2026-04-17
+Published: 2026-04-21
 Publisher: SUSE (https://www.suse.com)
 Canonical URL: https://suse.com/navigating-digital-resilience-2026
 Topics: Digital Sovereignty, Cybersecurity, Artificial Intelligence, Open Source, Digital Resilience
