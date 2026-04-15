@@ -190,12 +190,12 @@
               'Sovereignty\nInitiatives',
               'Reliability &\nAvailability',
               'User Experience',
-              'Skills Gaps',
+              'Skills Gaps'
    
             ],
             datasets: [{
-              label: 'Extra Budget Spending',
-              data: [70, 54, 46, 45, 39, 38, 36, 36, 34, 20],
+              label: 'Extra Budget Spend',
+              data: [70, 54, 46, 45, 39, 38, 36, 36, 34],
               backgroundColor: [
                 colorWhite, color5, color5, color3,
                 color3, color5, color3, color3, color3,
@@ -240,7 +240,7 @@
                 ticks: {
                    color:[colorWhite, color6, color6, colorMediumFog,  colorMediumFog,color6, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog, colorMediumFog ],
                   font: {
-                    size: [13, 13, 13, 11, 11, 13, 11, 11, 11,11,11, ]
+                    size: [13, 13, 13, 11, 11, 13, 11, 11, 11,11, ]
                   }
                 }
               }
