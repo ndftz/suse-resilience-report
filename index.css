@@ -838,8 +838,9 @@ svg * {
 @media (max-width: 900px) {
 
    #countries h4{text-align: center;}
-     #countries div{display: grid;
-    grid-template-columns: 1fr !important;}
+     #countries div{display: grid;margin: 0 auto;
+    grid-template-columns: 1fr !important;
+  }
 
 
  #countries  ul{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2rem;;}
