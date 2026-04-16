@@ -1517,7 +1517,7 @@ details>div {
 
 .country-card:hover,
 .country-card:focus-visible {
-  transform: translateY(1rem);
+  transform: translateY(0);
  
 
 }
@@ -2347,13 +2347,13 @@ button{outline:none;}
 
 .countries-tabs-layout.expanded .flag{transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.775); opacity:.5; filter: grayscale(1); transform:scale(.9)}
 
-.countries-tabs-layout.expanded .active .flag{opacity:1; filter: none; transform:scale(1)}
+.countries-tabs-layout.expanded .active .flag{opacity:1; filter: none; transform:scale(1.15)}
 
 .countries-tabs-layout.expanded .active .country-name{color: var(--text-main)}
 
 #countries .countries-tabs-layout.expanded  .country-name + span{color:var(--text-muted); background-color:rgba(0, 0, 0, 0.15); box-shadow:none}
 
-.country-panel{border-radius: 1em;}
+.country-panel{border-radius: 1em; margin-top:-.6em}
 #country-panel-fr{border-radius: 1em 0 1em 1em}
 
 #country-panel-de{border-radius: 0 1em 1em 1em}
