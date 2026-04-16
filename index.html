@@ -42,11 +42,11 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ResearchProject",
+    "@type": "Report",
     "name": "Navigating Digital Resilience 2026",
     "description": "SUSE research report surveying 309 IT leaders across 5 countries on digital sovereignty, cybersecurity, AI transparency and infrastructure strategy.",
     "publisher": {
-      "@type": "Report",
+      "@type": "Organization",
       "name": "SUSE - Navigating Digital Resilience 2026",
       "url": "https://www.suse.com"
     },
@@ -514,131 +514,250 @@
 
 
 
-<div class="grid-5-layout">  
+<div class="countries-tabs-layout">
+  <div class="grid-5-layout country-card-list" role="tablist" aria-label="Country findings">
+    <button class="country-card de" id="tab-de" role="tab" aria-controls="country-panel-de" aria-selected="false" type="button">
+      <span class="flag"></span>
+      <span class="country-name">Germany</span>
+      <span aria-label="43% with a formal strategy">43%</span>
+    </button>
+    <button class="country-card jp" id="tab-jp" role="tab" aria-controls="country-panel-jp" aria-selected="false" type="button">
+      <span class="flag"></span>
+      <span class="country-name">Japan</span>
+      <span aria-label="49% with a formal strategy">49%</span>
+    </button>
+    <button class="country-card us" id="tab-us" role="tab" aria-controls="country-panel-us" aria-selected="false" type="button">
+      <span class="flag"></span>
+      <span class="country-name">United States</span>
+      <span aria-label="41% with a formal strategy">41%</span>
+    </button>
+    <button class="country-card in" id="tab-in" role="tab" aria-controls="country-panel-in" aria-selected="false" type="button">
+      <span class="flag"></span>
+      <span class="country-name">India</span>
+      <span aria-label="58% with a formal strategy">58%</span>
+    </button>
+    <button class="country-card fr" id="tab-fr" role="tab" aria-controls="country-panel-fr" aria-selected="false" type="button">
+      <span class="flag"></span>
+      <span class="country-name">France</span>
+      <span aria-label="25% with a formal strategy">25%</span>
+    </button>
+  </div>
 
-
-
-<!-- Germany-->
-  <div class="de"> <div class="flag"></div>  <h4>Germany</h4> 
-  <p class="classification"> <i>Formalized and criteria driven</i>
+  <div class="country-panel-container">
+    <div id="country-panel-de" class="country-panel" role="tabpanel" aria-labelledby="tab-de" hidden>   <h3>Germany</h3><i>Formalized and criteria driven</i>
+      <p class="classification"> 
         <span>
-          <b>43%</b> with a formal strategy  
+          <strong>43%</strong> with a formal strategy
         </span>
       </p>
+      <p>Germany values and requires sovereignty expertise.</p>
+   
+      <ul>
+        <li><span><b class="count-up percent" data-count="69" aria-label="69">69</b><span class="hide">%</span></span> <p>digital sovereignty expertise matters when evaluating providers (v. 51% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
   <div>
-      <p>Germany values and requires sovereignty expertise.<br>&nbsp;</p> 
-      
-    </div>
-<ul>
-<li><b>69%</b> digital sovereignty expertise matters when evaluating providers (v. 51% total pop) When evaluating a new cloud or infrastructure provider, which factors matter most?</li>
-<li><b>61%</b> include digital sovereignty as a requirement in their RFPs (v. 45% total pop)Thinking about your most recent major infrastructure purchase or renewal, how did digital sovereignty factor into the decision?</li>
-<li><b>51%</b> digital sovereignty is a top resilience priority (vs. 43% total pop) What are your organization’s top priorities in order to be more digitally resilient?</li>
-<li><b>31%</b> associate open source with long-term survival  (vs. 22% total pop) In general, what does open source represent to you today?</li>
-</ul>
-
+    <p>When evaluating a new cloud or infrastructure provider, which factors matter most?</p>
   </div>
-
-
-<!-- Japan -->
-
-  <div class="jp"> <div class="flag"></div>  <h4>Japan</h4> 
+</details></li>
+        <li><span><b class="count-up percent" data-count="61" aria-label="61">61</b><span class="hide">%</span></span> <p>include digital sovereignty as a requirement in their RFPs (v. 45% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
   <div>
-    <p class="classification"> <i>Operationalized and risk averse</i>
-        <span>
-          <b>49%</b> with a formal strategy   
-        </span>
-      </p>
-      <p>Japan has growing concerns about resilience, responding with structure &amp; planning.</p> 
-      
-    </div>
-    
-<ul>
-<li><b>51%</b> more worried about digital resilience now than they were 3 years ago (v. 29% total pop) Compared to three years ago, how have your feelings changed about how your organization manages digital resilience?</li>
-<li><b>35%</b> very confident in ability to maintain operations if a primary provider were restricted (v. 45% total pop) How confident are you that your organization could maintain core operations if your primary cloud provider was suddenly restricted by a foreign government?</li>
-<li><b>60%</b> developed a digital sovereignty roadmap (v. 49% total pop) What are the steps toward digital sovereignty your organization has taken? </li>
-<li><b>56%</b> created internal sovereignty policies (v. 40% total pop) What are the steps toward digital sovereignty your organization has taken? </li>
-
- 
-
-</ul>
-
+    <p>Thinking about your most recent major infrastructure purchase or renewal, how did digital sovereignty factor into the decision?</p>
   </div>
-
-
-<!-- USA -->
-
-  <div class="us"> <div class="flag"></div>  <h4>United States</h4> 
+</details></li>
+        <li><span><b class="count-up percent" data-count="51" aria-label="51">51</b><span class="hide">%</span></span> <p>digital sovereignty is a top resilience priority (vs. 43% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
   <div>
-    <p class="classification"> <i>Engaged and practical</i>
+    <p>What are your organization’s top priorities in order to be more digitally resilient?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="31" aria-label="31">31</b><span class="hide">%</span></span> <p>associate open source with long-term survival (vs. 22% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>In general, what does open source represent to you today?</p>
+  </div>
+</details></li>
+      </ul>
+    </div>
+    <div id="country-panel-jp" class="country-panel" role="tabpanel" aria-labelledby="tab-jp" hidden><h3>Japan</h3><i>Operationalized and risk averse</i>
+      <p class="classification"> 
         <span>
-          <b>41%</b> with a formal strategy   
+          <strong>49%</strong> with a formal strategy
         </span>
       </p>
-      <p>The U.S. is optimistic about the future of digital resilience and is comfortable today.</p> 
+      <p>Japan has growing concerns about resilience, responding with structure &amp; planning.</p>
       
-    </div>
-<ul>
-<li><b>72%</b> public cloud hyperscalers are relevant for sovereign workloads (v. 65% total pop) Which types of IT vendors does your organization consider relevant to supporting sovereign workloads?  </li>
-<li><b>77%</b> use of AI infrastructure (v. 71% total pop) Which best describes your organization's approach to infrastructure and cloud solutions? </li>
-<li><b>61%</b> very optimistic about the future of digital resilience in their country (v. 48% total pop) When you think about the future of digital resilience in your country, how do you feel?</li>
-<li><b>67%</b> associate open source with flexibility (vs. 60% total pop) In general, what does open source represent to you today?   </li>
-
-</ul>
+      <ul>
+        <li><span><b class="count-up percent" data-count="51" aria-label="51">51</b><span class="hide">%</span></span> <p>more worried about digital resilience now than they were 3 years ago (v. 29% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Compared to three years ago, how have your feelings changed about how your organization manages digital resilience?</p>
   </div>
-
-
-<!-- India -->
-
-  <div class="in"> <div class="flag"></div>  <h4>India</h4> 
-  <div><p class="classification"><i>Most likely to claim they are active</i>
+</details></li>
+        <li><span><b class="count-up percent" data-count="35" aria-label="35">35</b><span class="hide">%</span></span> <p>very confident in ability to maintain operations if a primary provider were restricted (v. 45% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>How confident are you that your organization could maintain core operations if your primary cloud provider was suddenly restricted by a foreign government?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="60" aria-label="60">60</b><span class="hide">%</span></span> <p>developed a digital sovereignty roadmap (v. 49% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>What are the steps toward digital sovereignty your organization has taken?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="56" aria-label="56">56</b><span class="hide">%</span></span> <p>created internal sovereignty policies (v. 40% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>What are the steps toward digital sovereignty your organization has taken?</p>
+  </div>
+</details></li>
+      </ul>
+    </div>
+    <div id="country-panel-us" class="country-panel" role="tabpanel" aria-labelledby="tab-us" hidden> <h3>United States</h3><i>Engaged and practical</i>
+      <p class="classification"> 
         <span>
-          <b>58%</b> with a formal strategy  
+          <strong>41%</strong> with a formal strategy
         </span>
       </p>
-      <p>India is optimistic with momentum around sovereignty and AI.</p> 
-      
-    </div>
-<ul>
-<li><b>71%</b> digital sovereignty is a high priority (v. 57% total pop) How much of a priority is digital sovereignty for your organization today?</li>
-<li><b>62%</b> actively investing in digital sovereignty  (v. 52% total pop) Be candid: Is digital sovereignty ...   To make the intent clear, we can write this one as “Is digital sovereignty a genuine strategic priority that you are actively investing in?” </li>
-<li><b>90%</b> willing to invest more budget in AI: (v. 70% total pop) If your organization received an unexpected 20% increase in IT budget, where would you most likely invest it?   </li>
-<li><b>65%</b> very optimistic about the future of digital resilience in their country (v. 48% total pop) When you think about the future of digital resilience in your country, how do you feel?</li>
-</ul>
+      <p>The U.S. is optimistic about the future of digital resilience and is comfortable today.</p>
+     
+      <ul>
+        <li><span><b class="count-up percent" data-count="72" aria-label="72">72</b><span class="hide">%</span></span> <p>public cloud hyperscalers are relevant for sovereign workloads (v. 65% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Which types of IT vendors does your organization consider relevant to supporting sovereign workloads?</p>
   </div>
-
-
-
-<!-- France -->
-
-  <div class="fr"> <div class="flag"></div>  <h4>France</h4> 
-    <div><p class="classification"> <i>Aware but not as fully operationalized</i>
+</details></li>
+        <li><span><b class="count-up percent" data-count="77" aria-label="77">77</b><span class="hide">%</span></span> <p>use of AI infrastructure (v. 71% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Which best describes your organization's approach to infrastructure and cloud solutions?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="61" aria-label="61">61</b><span class="hide">%</span></span> <p>very optimistic about the future of digital resilience in their country (v. 48% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>When you think about the future of digital resilience in your country, how do you feel?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="67" aria-label="67">67</b><span class="hide">%</span></span> <p>associate open source with flexibility (vs. 60% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>In general, what does open source represent to you today?</p>
+  </div>
+</details></li>
+      </ul>
+    </div>
+    <div id="country-panel-in" class="country-panel" role="tabpanel" aria-labelledby="tab-in" hidden><h3>India</h3><i>Most likely to claim they are active</i>
+      <p class="classification"> 
         <span>
-          <b>25%</b> with a formal strategy
+          <strong>58%</strong> with a formal strategy
         </span>
       </p>
-      <p>France is still building toward operational maturity.<br>&nbsp;</p> 
+      <p>India is optimistic with momentum around sovereignty and AI.</p>
       
-    </div>
-<ul>
-<li><b>65%</b> are still developing a digital sovereignty strategy (vs. 50% total pop) Q: Does your organization currently have a formal strategy for digital sovereignty?</li>
-<li><b>39%</b> actively investing in digital sovereignty (v. 52% total pop) Q:Be candid: Is digital sovereignty ... </li>
-<li><b>45%</b> associate open source with control (v. 39% total pop) Q: In general, what does open source represent to you today?   </li>
-<li><b>56%</b> operational autonomy will matter most for digital resilience over the next 5 years (v. 47% total pop) Q: Looking ahead five years, which of the following do you think will matter most for digital resilience across the industry?   </li>
-
-</ul>
+      <ul>
+        <li><span><b class="count-up percent" data-count="71" aria-label="71">71</b><span class="hide">%</span></span> <p>digital sovereignty is a high priority (v. 57% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>How much of a priority is digital sovereignty for your organization today?</p>
   </div>
-
-
-
-
-
-
-
-
+</details></li>
+        <li><span><b class="count-up percent" data-count="62" aria-label="62">62</b><span class="hide">%</span></span> <p>actively investing in digital sovereignty (v. 52% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Be candid: Is digital sovereignty a genuine strategic priority that you are actively investing in?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="90" aria-label="90">90</b><span class="hide">%</span></span> <p>willing to invest more budget in AI (v. 70% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>If your organization received an unexpected 20% increase in IT budget, where would you most likely invest it?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="65" aria-label="65">65</b><span class="hide">%</span></span> <p>very optimistic about the future of digital resilience in your country (v. 48% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>When you think about the future of digital resilience in your country, how do you feel?</p>
+  </div>
+</details></li>
+      </ul>
+    </div>
+    <div id="country-panel-fr" class="country-panel" role="tabpanel" aria-labelledby="tab-fr" hidden>   <h3>France </h3><i>Aware but not as fully operationalized</i>
+      <p class="classification"> 
+        <span>
+          <strong>25%</strong> with a formal strategy
+        </span>
+      </p>
+      <p>France is still building toward operational maturity.</p>
+   
+      <ul>
+        <li><span><b class="count-up percent" data-count="65" aria-label="65">65</b><span class="hide">%</span></span> <p>are still developing a digital sovereignty strategy (vs. 50% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Does your organization currently have a formal strategy for digital sovereignty?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="39" aria-label="39">39</b><span class="hide">%</span></span> <p>actively investing in digital sovereignty (v. 52% total pop)</li>
+        <li><span><b class="count-up percent" data-count="45" aria-label="45">45</b><span class="hide">%</span></span> <p>associate open source with control (v. 39% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>In general, what does open source represent to you today?</p>
+  </div>
+</details></li>
+        <li><span><b class="count-up percent" data-count="56" aria-label="56">56</b><span class="hide">%</span></span> <p>operational autonomy will matter most for digital resilience over the next 5 years (v. 47% total pop) <details class="survey-details by-country">
+  <summary><b>Survey Question:</b></summary>
+  <div>
+    <p>Looking ahead five years, which of the following do you think will matter most for digital resilience across the industry?</p>
+  </div>
+</details></li>
+      </ul>
+    </div>
+  </div>
 </div>
 </section>
 
+<script>
+(function(){
+  const tablist = document.querySelector('#countries .country-card-list');
+  if (!tablist) return;
+  const tabs = Array.from(tablist.querySelectorAll('.country-card'));
+  const panels = Array.from(document.querySelectorAll('#countries .country-panel'));
 
+  const layout = document.querySelector('.countries-tabs-layout');
+
+  function activateTab(tab) {
+    tabs.forEach(t => {
+      const active = t === tab;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+      if (active) t.focus();
+    });
+    panels.forEach(panel => {
+      const visible = panel.id === tab.getAttribute('aria-controls');
+      panel.hidden = !visible;
+      panel.classList.toggle('active', visible);
+    });
+    if (layout) layout.classList.add('expanded');
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => activateTab(tab));
+    tab.addEventListener('keydown', event => {
+      const key = event.key;
+      const currentIndex = tabs.indexOf(tab);
+      let nextIndex = null;
+      if (key === 'ArrowRight' || key === 'ArrowDown') nextIndex = (currentIndex + 1) % tabs.length;
+      if (key === 'ArrowLeft' || key === 'ArrowUp') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      if (nextIndex !== null) {
+        event.preventDefault();
+        activateTab(tabs[nextIndex]);
+      }
+    });
+  });
+})();
+</script>
 <section id="strategy" class="container">
 <h2>Strategy</h2>
   <p class="subtitle">Findings set a high bar for those <i>not yet</i> <b>developing</b> or <b>having established</b> a formal strategy</p>
@@ -657,7 +776,6 @@
   <summary><b>Survey Question:</b></summary>
   <div>
     <p>Does your organization currently have a formal strategy for digital sovereignty?</p>
-     
   </div>
   </details>
 </div>
