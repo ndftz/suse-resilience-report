@@ -1492,6 +1492,7 @@ details>div {
 }
 
 .country-card {
+  outline:0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1502,7 +1503,7 @@ details>div {
   border-radius: 2em 2em 0 0; 
   color: inherit;
   cursor: pointer;
-  transition: border-color .25s ease, box-shadow .25s ease, background .25s ease, transform .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
 }
 
 .country-card:hover,
@@ -1778,7 +1779,7 @@ box-shadow: 0 0 0 .1rem var(--color-jungle-1);
 
 .jump-to a {
   padding: .5em 3rem;
-  color: var(--color-pine-3);
+  color: var(--text-muted);
   transition: all .2s ease;
 }
 
