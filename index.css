@@ -859,7 +859,7 @@ svg * {
     line-height:1;
     font-size: clamp(5rem, -13rem + 20vw, 13rem);
     margin: 0;
-    color: var(--bg-grad-1);
+    color: var(--bg-grad-2);
     font-weight: 900;
 }
 
@@ -2398,7 +2398,7 @@ button{outline:none;}
 
 .country-panel h3 + i {
     color: var(--text-muted);
-    background-color: #071f1b;
+    background-color: var(--bg-grad-2);
     padding: 1em 2em;
     border-radius: 2em;
     margin-top: 1rem;
