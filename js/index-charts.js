@@ -184,7 +184,7 @@
           data: {
             labels: [
               'Implementing AI',
-              'Data security\n& compliance',
+              'Data security',
               'Digital Resilience',
               'Cloud Migration',
               'Investing in\nopen source',
