@@ -27,7 +27,7 @@
       });
     }, { threshold: 0.5 });
 
-    document.querySelectorAll('.count-up').forEach(el => countUpObserver.observe(el));
+    document.querySelectorAll('.count-up:not(.static)').forEach(el => countUpObserver.observe(el));
 
     // Register datalabels plugin globally
     Chart.register(ChartDataLabels);
