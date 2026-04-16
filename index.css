@@ -100,7 +100,7 @@
    }
 
    ::selection{
-    background-color:var(--color-jungle-6); color:var(--bg-base); text-shadow:none;
+    background-color:var(--color-jungle-6); color:var(--bg-base);  text-shadow: 0 .15em .1rem rgba(0,0,0,0.2)
    }
 
 
