@@ -2358,7 +2358,7 @@ button{outline:none;}
 
 #country-panel-de{border-radius: 0 1em 1em 1em}
 
-
+.country-panel.active h3 + i,
 .country-panel.active h3{animation: slide-in .5s ease forwards; }
 
 @keyframes slide-in{
