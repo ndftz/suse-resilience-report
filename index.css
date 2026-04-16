@@ -2320,7 +2320,7 @@ button{outline:none;}
 }
 @media (max-width: 900px) {
 #countries ul {grid-template-columns: 1fr; padding-right:0;}
-#countries li{display:grid; grid-template-columns: 8em 1fr; padding-right:0;}
+#countries li{display:grid; grid-template-columns: 8em 1fr; padding-right:0;        padding: 2em 1em 0 2em;}
 }
 
 .country-card-list button{position:relative; line-height:1.2em}
