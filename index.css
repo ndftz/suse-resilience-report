@@ -2378,6 +2378,8 @@ button{outline:none;}
 .country-panel.active li:nth-child(4n){animation-delay: -0s;}
 
 
+.country-panel.active  .classification span{animation: slide-in 1s ease forwards;}
+
     #countries .classification i{display:block;}
 
 
