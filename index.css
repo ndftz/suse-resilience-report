@@ -2333,7 +2333,7 @@ button{outline:none;}
 
 .countries-tabs-layout.expanded .country-name{color: var(--text-muted)}
 
-.countries-tabs-layout.expanded .flag{transition: all .2s ease; opacity:.5; filter: grayscale(1); transform:scale(.9)}
+.countries-tabs-layout.expanded .flag{transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.775); opacity:.5; filter: grayscale(1); transform:scale(.9)}
 
 .countries-tabs-layout.expanded .active .flag{opacity:1; filter: none; transform:scale(1)}
 
